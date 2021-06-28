@@ -5,140 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<style>
-    @font-face {
-        font-family: "San Francisco Pro Fonts";
-        src: url("font/SF-Pro-Display-Medium.otf") format("opentype");
-        }
-    html{
-        height: 100%;
-    }
-    body{
-        padding: 0;
-        margin: 0;
-        font-family: "San Francisco Pro Fonts";
-        height: 100%;
-    }
-    .wrapp{
-        height: 100%;
-    }
-    nav{
-        background: transparent;
-        display: flex;
-        height: 50px;
-        justify-content: space-between;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    nav .logo{
-        display: flex;
-    }
-    nav ul{
-        display: flex;
-        list-style: none;
-        padding-inline-start: 40px;
-    }
-    nav ul li{
-        padding: 0 8px;
-    }
-    nav ul li a{
-        text-decoration: none;
-        color: #344563;
-    }
-
-    .nav-item{
-        display: flex;
-    }
-    .nav-item .block-account{
-       display: flex;
-       align-items: center;
-    }
-    #form{
-        display: flex;
-        height: 80vh;
-        justify-content: center;
-        align-items: center;
-    }
-    .forma-main{
-        width: 600px;
-    }
-    .form-header{
-        box-shadow: 0 3px 5px #091e4221;
-        height: 80px;
-        border-radius: 4px;
-    }
-    .form-body{
-        box-shadow: 0 3px 5px #091e4221;
-        min-height: 150px;
-        border-radius: 4px;
-        margin-top: 24px;
-    }
-    .form-body table, .form-header-block-avatar table{
-        margin-left: 10%;
-    }
-    .form-header-backgraund{
-        background-image: url(img/backgraund_user.png);
-        height: 50px;
-    }
-    .form-header-block-avatar{
-        margin-top: -16px;
-    }
-    .form-body-lable{
-        text-align: right;
-        font-size: 0.9rem;
-        color: #6B778C;
-        min-width: 110px;
-    }
-    
-    h5{
-        color: #344563;
-        padding: 8px 0;
-        margin: 0;
-    }
-    .btn-icon{
-        background: none;
-        border: none;
-    }
-    footer{
-        max-height: 20px;
-        display: flex;
-        justify-content: center;
-        margin-top: -20px;
-        color: #97A0AF;
-    }
-    @media (max-width: 544px){
-        .forma-main{
-            width: auto;
-        }
-        .nav-item-rigth{
-            display: none;
-        }
-        .nav-list{
-            display: none;
-        }
-        #form{
-            height: auto;
-        }
-        .btn-icon{
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 9999;
-        }
-        #left-side{
-            position: absolute;
-            height: 100vh;
-            width: 100vw;
-            background: #F4F5F7;
-            left: -100vw;
-            top:0
-        }
-        #left-side.open{
-            left: 0;
-        }
-    }
-</style>
 <body>
     <div class="wrapp">
     <nav>
@@ -147,7 +15,7 @@
                 <img src="img/logo.svg" alt="">
             </div>
             <ul class="nav-list">
-                <li><a href="">Link 1</a></li>
+                <li><a href="login.html">Link 1</a></li>
                 <li><a href="">Link 2</a></li>
                 <li><a href="">Link 3</a></li>
             </ul>
