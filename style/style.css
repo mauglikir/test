@@ -28,6 +28,9 @@ body{
     height: 100%;
     background-color: #f4f5f7;
 }
+#content{
+    padding: 0 20px !important;
+}
 .wrapp{
     height: 100%;
     overflow: auto;
@@ -135,8 +138,44 @@ footer{
     width: 576px;
     border: none;
 }
+.main-banner{
+    background-image: url(../img/bg-banner.jpg);
+    height: 24rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-banner-form{
+    width: 25rem;
+}
+.main-banner-form .field-group{
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+}
+.main-banner-form .field-group .buttons{
+    margin-left: -25px;
+}
+.aui-main-page{
+    margin-top: 21px;
+}
+.aui-main-page .aui-group{
+    display: flex;
+}
 @media (max-width: 544px){
-    
+    .aui-main-page .aui-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .aui-main-page > .aui-group>.aui-item+.aui-item{
+        padding: 0 !important;
+    }
+    .main-banner{
+        height: 14rem;
+    }
     
     .forma-main{
         width: auto;
