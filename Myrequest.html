@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.js" integrity="sha512-DkENIkhNP5r+sfHUC5hhFAzApGNR5HTu1fzymBBhXZma4zytOUQh8qhz5xc3nSbSQfdYI6qdI281YwUNmubEMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-css-deprecations.min.js" integrity="sha512-xwtRx75GIraK3z3Ow+gCJmcKp3yZ8T/KalbfL6cO9y9q0xFf0XlSWIEeW/t8L+GlTU3JjJMi71hLg4ttttJcgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.js" integrity="sha512-iUshpSgJ26ryfeS5STpopGIsONtcP9nlIgLU24C8jwGPjsSTO5vqepMFU/KWc3fTIbNhbSTS/arJAGSnMPqQeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.js" integrity="sha512-MdAIAZrPjOF7Xfo/ukqMouLNfiTuNAIEy0DScIowIHx2wDNAYOAKCCbltIvuV37oZfQCiH/IGPWtPfz2htUn+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-browserfocus.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.css">
+</head>
+<body>
+    <div id="page" class="wrapp">
+    <nav>
+        <div class="nav-item">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="aui-buttons">
+                <button class="aui-button aui-button-link aui-button-split-main">Link 1</button>
+                <button class="aui-button aui-button-link aui-button-split-main">Link 2</button>
+                <button class="aui-button aui-button-link aui-button-split-main">Link 3</button>
+                <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
+            </div>
+            <!-- Be sure to put your dropdown markup outside the button group...
+                 otherwise the buttons will get jaggy edges! -->
+            <aui-dropdown-menu id="split-container-dropdown">
+                <aui-item-link>Menu item 1</aui-item-link>
+                <aui-item-link>Menu item 2</aui-item-link>
+                <aui-item-link>Menu item 3</aui-item-link>
+            </aui-dropdown-menu>
+            <button class="btn-icon" onclick="countRabbits()">
+                <img src="img/icon_menu.svg" alt="">
+            </button>
+        </div>
+        <div class="nav-item nav-item-rigth">
+            <div class="block-account">
+                <span>
+                    <a href="" style="color: #344563; text-decoration:none; margin-right:8px">
+                        My requst
+                    </a>
+                </span>
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div>
+        
+    </nav>
+    <div id="content" role="main">
+        <div class="  aui-page-size-small  aui-page-focused p-20 m-auto-20">
+            <!-- <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-main d-flex d-flex-just header-hr">
+                        <h1>Log in to Customer Portal</h1>
+                    </div>
+                </div>
+            </header> -->
+            <h2>Examples</h2>
+<article class="aui-flatpack-example">
+    <div class="aui-tabs horizontal-tabs" id="tabs-example1" role="application">
+        <ul class="tabs-menu" role="tablist">
+            <li class="menu-item active-tab" role="presentation">
+                <a href="#tabs-example-first" id="aui-uid-0" role="tab" aria-selected="true">Designers</a>
+            </li>
+            <li class="menu-item" role="presentation">
+                <a href="#tabs-example-second" id="aui-uid-1" role="tab" aria-selected="false">Developers</a>
+            </li>
+            <li class="menu-item" role="presentation">
+                <a href="#tabs-example-third" id="aui-uid-2" role="tab" aria-selected="false">PMs</a>
+            </li>
+        </ul>
+        <div class="tabs-pane active-pane" id="tabs-example-first" role="tabpanel" aria-labelledby="aui-uid-0">
+            <h3>Designers</h3>
+            <table class="aui">
+                <thead>
+                    <tr>
+                        <th id="basic-number">#</th>
+                        <th id="basic-fname">First name</th>
+                        <th id="basic-lname">Last name</th>
+                        <th id="basic-username">Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="basic-number"><time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time></td>
+                        <td headers="basic-fname">Matt</td>
+                        <td headers="basic-lname">Bond</td>
+                        <td headers="basic-username">mbond</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">2</td>
+                        <td headers="basic-fname">Ross</td>
+                        <td headers="basic-lname">Chaldecott</td>
+                        <td headers="basic-username">rchaldecott</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">3</td>
+                        <td headers="basic-fname">Henry</td>
+                        <td headers="basic-lname">Tapia</td>
+                        <td headers="basic-username">htapia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabs-pane" id="tabs-example-second" role="tabpanel" aria-labelledby="aui-uid-1">
+            <h3>Developers</h3>
+            <table class="aui">
+                <thead>
+                    <tr>
+                        <th id="basic-number">#</th>
+                        <th id="basic-fname">First name</th>
+                        <th id="basic-lname">Last name</th>
+                        <th id="basic-username">Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="basic-number">4</td>
+                        <td headers="basic-fname">Seb</td>
+                        <td headers="basic-lname">Ruiz</td>
+                        <td headers="basic-username">sruiz</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">7</td>
+                        <td headers="basic-fname">Sean</td>
+                        <td headers="basic-lname">Curtis</td>
+                        <td headers="basic-username">scurtis</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">8</td>
+                        <td headers="basic-fname">Matthew</td>
+                        <td headers="basic-lname">Watson</td>
+                        <td headers="basic-username">mwatson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabs-pane" id="tabs-example-third" role="tabpanel" aria-labelledby="aui-uid-2">
+            <h3>Product management</h3>
+            <table class="aui">
+                <thead>
+                    <tr>
+                        <th id="basic-number">#</th>
+                        <th id="basic-fname">First name</th>
+                        <th id="basic-lname">Last name</th>
+                        <th id="basic-username">Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="basic-number">5</td>
+                        <td headers="basic-fname">Jens</td>
+                        <td headers="basic-lname">Schumacher</td>
+                        <td headers="basic-username">jschumacher</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">6</td>
+                        <td headers="basic-fname">Sten</td>
+                        <td headers="basic-lname">Pittet</td>
+                        <td headers="basic-username">spittet</td>
+                    </tr>
+                    <tr>
+                        <td headers="basic-number">9</td>
+                        <td headers="basic-fname">James</td>
+                        <td headers="basic-lname">Dumay</td>
+                        <td headers="basic-username">jdumay</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- .aui-tabs -->
+</article>
+        </div>
+    </div>
+
+        
+    
+    </div>
+    <footer >
+        <a href="index.html"> <<< </a><span>Powered by Jira & Help Desk</span><a href="singin.html"> >>> </a>
+    </footer>
+    <div id="left-side">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="resetpass.html">Reset pass</a></li>
+            <li><a href="singin.html">Sing Up</a></li>
+            <li><a href="user.html">User</a></li>
+        </ul>
+
+    </div>
+    <script>
+        function countRabbits() {
+          document.getElementById('left-side').classList.toggle("open")
+          console.log("asdsa")
+        }
+      </script>  
+</body>
+</html>
