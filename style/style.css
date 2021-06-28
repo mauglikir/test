@@ -41,6 +41,7 @@ nav{
 }
 nav .logo{
     display: flex;
+
 }
 nav ul{
     display: flex;
@@ -57,6 +58,13 @@ nav ul li a{
 
 .nav-item{
     display: flex;
+    align-items: center;
+}
+.nav-item .aui-buttons{
+    margin-left: 21px;
+}
+.nav-item .aui-buttons > button{
+    margin: 0 4px;
 }
 .nav-item .block-account{
    display: flex;
@@ -75,12 +83,14 @@ nav ul li a{
     box-shadow: 0 3px 5px #091e4221;
     height: 80px;
     border-radius: 4px;
+    background-color: white;
 }
 .form-body{
     box-shadow: 0 3px 5px #091e4221;
     min-height: 150px;
     border-radius: 4px;
     margin-top: 24px;
+    background-color: white;
 }
 .form-body table, .form-header-block-avatar table{
     margin-left: 10%;
@@ -123,8 +133,14 @@ footer{
     border: none;
 }
 @media (max-width: 544px){
+    .btn-icon{
+        display: none;
+    }
     .forma-main{
         width: auto;
+    }
+    .nav-item .aui-buttons{
+        display: none;
     }
     .nav-item-rigth{
         display: none;
@@ -140,6 +156,7 @@ footer{
         top: 10px;
         right: 10px;
         z-index: 9999;
+        display: block;
     }
     #left-side{
         position: absolute;

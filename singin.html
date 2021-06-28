@@ -28,13 +28,6 @@
                 <button class="aui-button aui-button-link aui-button-split-main">Link 3</button>
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
-            <!-- Be sure to put your dropdown markup outside the button group...
-                 otherwise the buttons will get jaggy edges! -->
-            <aui-dropdown-menu id="split-container-dropdown">
-                <aui-item-link>Menu item 1</aui-item-link>
-                <aui-item-link>Menu item 2</aui-item-link>
-                <aui-item-link>Menu item 3</aui-item-link>
-            </aui-dropdown-menu>
             <button class="btn-icon" onclick="countRabbits()">
                 <img src="img/icon_menu.svg" alt="">
             </button>
@@ -56,27 +49,8 @@
             <header class="aui-page-header">
                 <div class="aui-page-header-inner">
                     <div class="aui-page-header-main d-flex d-flex-just header-hr">
-                        <h1>Log in to Customer Portal</h1>
-                            <button class="aui-button aui-dropdown2-trigger" aria-controls="example-dropdown">
-                                English
-                            </button>
-                            <aui-dropdown-menu id="example-dropdown">
-                                <aui-section label="Links">
-                                    <aui-item-link href="http://atlassian.com">Atlassian</aui-item-link>
-                                    <aui-item-link href="http://news.ycombinator.com">Hacker news</aui-item-link>
-                                    <aui-item-link href="http://github.com">Github</aui-item-link>
-                                </aui-section>
-                                <aui-section label="Browsers">
-                                    <aui-item-radio interactive checked>Chrome</aui-item-radio>
-                                    <aui-item-radio interactive>Firefox</aui-item-radio>
-                                    <aui-item-radio interactive disabled>Safari</aui-item-radio>
-                                </aui-section>
-                                <aui-section label="Languages">
-                                    <aui-item-checkbox interactive checked>Javascript</aui-item-checkbox>
-                                    <aui-item-checkbox interactive>Fortran</aui-item-checkbox>
-                                    <aui-item-checkbox interactive>Rust</aui-item-checkbox>
-                                </aui-section>
-                            </aui-dropdown-menu>
+                        <h1>Sign up to HelpDesk</h1>
+                            
                     </div>
                 </div>
             </header>
@@ -84,29 +58,33 @@
                 <section class="aui-page-panel-content">
                     <form class="aui top-label">
                         <div class="field-group">
-                            <label for="text-input">User<span class="aui-icon icon-required">required</span></label>
+                            <label for="text-input">First Name<span class="aui-icon icon-required">required</span></label>
+                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                        </div>
+                        <div class="field-group">
+                            <label for="text-input">Last Name<span class="aui-icon icon-required">required</span></label>
+                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                        </div>
+                        <div class="field-group">
+                            <label for="text-input">Company<span class="aui-icon icon-required">required</span></label>
+                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                        </div>
+                        <div class="field-group">
+                            <label for="text-input">Email<span class="aui-icon icon-required">required</span></label>
                             <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
                         </div>
                         <div class="field-group">
                             <label for="text-input">Password<span class="aui-icon icon-required">required</span></label>
                             <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
                         </div>
+                        <div class="field-group">
+                            <label for="text-input">Please enter the word as shown below<span class="aui-icon icon-required">required</span></label>
+                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                        </div>
                         <div class="buttons-container d-flex d-flex-just">
                             
-                                <button class="aui-button aui-button-primary">Login</button>
-                                <form class="aui">
-                                    <div class="checkbox">
-                                        <input class="checkbox" type="checkbox" name="checkBoxOne" id="checkBoxOne">
-                                        <label for="checkBoxOne">Keep me logged in</label>
-                                    </div>
-                                </form>
+                                <button class="aui-button aui-button-primary">Sing Up</button>
                             
-                        </div>
-                        <div class="field-group">
-                            <a href="">Sign up</a>
-                        </div>
-                        <div class="field-group">
-                            <a href="">Reset password</a>
                         </div>
                     </form>
                 </section>
@@ -118,7 +96,7 @@
     
     </div>
     <footer >
-        <a href="index.html"> <<< </a><span>Powered by Jira & Help Desk</span><a href="singin.html"> >>> </a>
+        <a href="login.html"> <<< </a><span>Powered by Jira & Help Desk</span><a href="resetpass.html"> >>> </a>
     </footer>
     <div id="left-side">
 
