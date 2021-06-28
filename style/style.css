@@ -30,6 +30,7 @@ body{
 }
 .wrapp{
     height: 100%;
+    overflow: auto;
 }
 nav{
     background: transparent;
@@ -38,6 +39,7 @@ nav{
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
 }
 nav .logo{
     display: flex;
@@ -117,6 +119,7 @@ h5{
 .btn-icon{
     background: none;
     border: none;
+    display: none;
 }
 footer{
     max-height: 20px;
@@ -133,9 +136,8 @@ footer{
     border: none;
 }
 @media (max-width: 544px){
-    .btn-icon{
-        display: none;
-    }
+    
+    
     .forma-main{
         width: auto;
     }
