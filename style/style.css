@@ -165,6 +165,12 @@ footer{
 .aui-main-page .aui-group{
     display: flex;
 }
+.aui-table-new .field-group{
+    padding: 0 !important;
+}
+.aui-table-new header{
+    width: auto !important;
+}
 @media (max-width: 544px){
     .aui-main-page .aui-group{
         display: flex;
