@@ -11,6 +11,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.js" integrity="sha512-DkENIkhNP5r+sfHUC5hhFAzApGNR5HTu1fzymBBhXZma4zytOUQh8qhz5xc3nSbSQfdYI6qdI281YwUNmubEMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-css-deprecations.min.js" integrity="sha512-xwtRx75GIraK3z3Ow+gCJmcKp3yZ8T/KalbfL6cO9y9q0xFf0XlSWIEeW/t8L+GlTU3JjJMi71hLg4ttttJcgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.js" integrity="sha512-iUshpSgJ26ryfeS5STpopGIsONtcP9nlIgLU24C8jwGPjsSTO5vqepMFU/KWc3fTIbNhbSTS/arJAGSnMPqQeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.js" integrity="sha512-MdAIAZrPjOF7Xfo/ukqMouLNfiTuNAIEy0DScIowIHx2wDNAYOAKCCbltIvuV37oZfQCiH/IGPWtPfz2htUn+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-browserfocus.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
@@ -25,17 +29,18 @@
                 <img src="img/logo.svg" alt="">
             </div>
             <div class="aui-buttons">
-                <button class="aui-button aui-button-link aui-button-split-main">Link 1</button>
-                <button class="aui-button aui-button-link aui-button-split-main">Link 2</button>
-                <button class="aui-button aui-button-link aui-button-split-main">Link 3</button>
+                <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="Myrequest.html">My requst</a>
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
-            <!-- Be sure to put your dropdown markup outside the button group...
-                 otherwise the buttons will get jaggy edges! -->
             <aui-dropdown-menu id="split-container-dropdown">
-                <aui-item-link>Menu item 1</aui-item-link>
-                <aui-item-link>Menu item 2</aui-item-link>
-                <aui-item-link>Menu item 3</aui-item-link>
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="singin.html">Sing Up</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="user.html">User</a>
+                </aui-item-link>
             </aui-dropdown-menu>
             <button class="btn-icon" onclick="countRabbits()">
                 <img src="img/icon_menu.svg" alt="">
@@ -120,7 +125,7 @@
     
     </div>
     <footer >
-        <a href="index.html"> <<< </a><span>Powered by Jira & Help Desk</span><a href="singin.html"> >>> </a>
+       <span>Powered by Jira & Help Desk</span>
     </footer>
     <div id="left-side">
         <ul>

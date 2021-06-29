@@ -68,7 +68,7 @@ nav ul li a{
 .nav-item .aui-buttons{
     margin-left: 21px;
 }
-.nav-item .aui-buttons > button{
+.nav-item .aui-buttons > a{
     margin: 0 4px;
 }
 .nav-item .block-account{
