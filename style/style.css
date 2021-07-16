@@ -140,7 +140,7 @@ footer{
 }
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
-    height: 24rem;
+    height: 55vhs;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -211,10 +211,12 @@ footer{
         width: 100vw;
         background: #F4F5F7;
         left: -100vw;
-        top:0
+        top:0;
+        display: none;
     }
     #left-side.open{
         left: 0;
+        display: block;
     }
     .aui-page-panel{
         margin: 20px auto !important;
