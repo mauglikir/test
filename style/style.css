@@ -140,7 +140,7 @@ footer{
 }
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
-    height: 55vhs;
+    height: 55vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
