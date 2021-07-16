@@ -171,6 +171,9 @@ footer{
 .aui-table-new header{
     width: auto !important;
 }
+#left-side{
+    display: none;
+}
 @media (max-width: 544px){
     .aui-main-page .aui-group{
         display: flex;
@@ -212,7 +215,7 @@ footer{
         background: #F4F5F7;
         left: -100vw;
         top:0;
-        display: none;
+        
     }
     #left-side.open{
         left: 0;
