@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.js" integrity="sha512-DkENIkhNP5r+sfHUC5hhFAzApGNR5HTu1fzymBBhXZma4zytOUQh8qhz5xc3nSbSQfdYI6qdI281YwUNmubEMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-css-deprecations.min.js" integrity="sha512-xwtRx75GIraK3z3Ow+gCJmcKp3yZ8T/KalbfL6cO9y9q0xFf0XlSWIEeW/t8L+GlTU3JjJMi71hLg4ttttJcgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.js" integrity="sha512-iUshpSgJ26ryfeS5STpopGIsONtcP9nlIgLU24C8jwGPjsSTO5vqepMFU/KWc3fTIbNhbSTS/arJAGSnMPqQeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.js" integrity="sha512-MdAIAZrPjOF7Xfo/ukqMouLNfiTuNAIEy0DScIowIHx2wDNAYOAKCCbltIvuV37oZfQCiH/IGPWtPfz2htUn+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-browserfocus.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.css">
+</head>
+<body>
+    <div id="page" class="wrapp">
+    <nav>
+        <div class="nav-item">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="aui-buttons">
+                <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="Myrequest.html">My requst</a>
+                <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
+            </div>
+            <aui-dropdown-menu id="split-container-dropdown">
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="singin.html">Sing Up</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="user.html">User</a>
+                </aui-item-link>
+            </aui-dropdown-menu>
+            <button class="btn-icon" onclick="countRabbits()">
+                <img src="img/icon_menu.svg" alt="">
+            </button>
+        </div>
+        <div class="nav-item nav-item-rigth">
+            <div class="block-account">
+                <span>
+                    <a href="" style="color: #344563; text-decoration:none; margin-right:8px">
+                        My requst
+                    </a>
+                </span>
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div>
+        
+    </nav>
+    <div id="content" role="main">
+        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20">
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-main d-flex d-flex-just header-hr">
+                        <h1>Sign up to HelpDesk</h1>
+                            
+                    </div>
+                </div>
+            </header>
+            <div class="aui-page-panel-inner">
+                <section class="aui-page-panel-content">
+                    <div class="aui-tabs horizontal-tabs">
+                        <ul class="tabs-menu">
+                            <li class="menu-item active-tab">
+                                <a href="#tabs-example-first">Feild tab</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#tabs-example-second">Catalog cascading</a>
+                            </li>
+                        </ul>
+                        <div class="tabs-pane active-pane" id="tabs-example-first">
+                            <form class="aui top-label">
+                                <div class="field-group">
+                                    <label for="text-input">Summary<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Components</label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Labels</label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Priority</label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <legend><span>Leave a comment</span></legend>
+                                    <div class="field-group">
+                                        <label for="textarea-id">Comment</label>
+                                        <textarea class="textarea long-field" name="comment" id="textarea-id" placeholder="Your comment here..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="buttons-container d-flex d-flex-just">
+                                    
+                                        <button class="aui-button aui-button-primary">Sing Up</button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tabs-pane" id="tabs-example-second">
+                            <form class="aui top-label">
+                                <div class="field-group">
+                                    <label for="text-input">First Name<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Last Name<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Company<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Email<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Password<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="field-group">
+                                    <label for="text-input">Please enter the word as shown below<span class="aui-icon icon-required">required</span></label>
+                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                </div>
+                                <div class="buttons-container d-flex d-flex-just">
+                                    
+                                        <button class="aui-button aui-button-primary">Sing Up</button>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    </div>
+    <footer >
+        <span>Powered by Jira & Help Desk</span>
+    </footer>
+    <div id="left-side">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="resetpass.html">Reset pass</a></li>
+            <li><a href="singin.html">Sing Up</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="Myrequest.html"></a></li>
+        </ul>
+
+    </div>
+    <script>
+        function countRabbits() {
+          document.getElementById('left-side').classList.toggle("open")
+          console.log("asdsa")
+        }
+      </script>  
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/javascript/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.js" integrity="sha512-DkENIkhNP5r+sfHUC5hhFAzApGNR5HTu1fzymBBhXZma4zytOUQh8qhz5xc3nSbSQfdYI6qdI281YwUNmubEMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-css-deprecations.min.js" integrity="sha512-xwtRx75GIraK3z3Ow+gCJmcKp3yZ8T/KalbfL6cO9y9q0xFf0XlSWIEeW/t8L+GlTU3JjJMi71hLg4ttttJcgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.js" integrity="sha512-iUshpSgJ26ryfeS5STpopGIsONtcP9nlIgLU24C8jwGPjsSTO5vqepMFU/KWc3fTIbNhbSTS/arJAGSnMPqQeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.js" integrity="sha512-MdAIAZrPjOF7Xfo/ukqMouLNfiTuNAIEy0DScIowIHx2wDNAYOAKCCbltIvuV37oZfQCiH/IGPWtPfz2htUn+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-browserfocus.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.css">
+</head>
+<body>
+    <div id="page" class="wrapp">
+    <nav>
+        <div class="nav-item">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="aui-buttons">
+                <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="Myrequest.html">My requst</a>
+                <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
+            </div>
+            <aui-dropdown-menu id="split-container-dropdown">
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="singin.html">Sing Up</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a class="aui-button aui-button-link aui-button-split-main" href="user.html">User</a>
+                </aui-item-link>
+            </aui-dropdown-menu>
+            <button class="btn-icon" onclick="countRabbits()">
+                <img src="img/icon_menu.svg" alt="">
+            </button>
+        </div>
+        <div class="nav-item nav-item-rigth">
+            <div class="block-account">
+                <span>
+                    <a href="" style="color: #344563; text-decoration:none; margin-right:8px">
+                        My requst
+                    </a>
+                </span>
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div>
+        
+    </nav>
+    <div id="content" role="main">
+        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20">
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-image">
+                        <span class="aui-avatar aui-avatar-large aui-avatar-project">
+                            <span class="aui-avatar-inner">
+                                <img alt="My awesome project" src="images/avatar-project.svg">
+                            </span>
+                        </span>
+                    </div>
+                    <div class="aui-page-header-main">
+                        <ol class="aui-nav aui-nav-breadcrumbs">
+                            <li><a href="https://example.com/">Breadcrumbs</a></li>
+                            <li><a href="https://example.com/" class="custom">Sub-page</a></li>
+                            <li class="aui-nav-selected"><span class="assistive">Current page:</span> Direct parent page name</li>
+                        </ol>
+                        <h1>Design a posters</h1>
+                    </div>
+                    
+                </div>
+            </header>
+            
+            <div class="aui-page-panel-inner">
+                <section class="aui-page-panel-content">
+                    <div class="aui-buttons">
+                        <button class="aui-button">Comment</button>
+                        <button class="aui-button">Open</button>
+                        <button class="aui-button">Dev</button>
+                        <button class="aui-button">Resolve</button>
+                        <button class="aui-button">to Client</button>
+                        <button class="aui-button">Invite</button>
+                        <button class="aui-button">Edit</button>
+                    </div>
+                    <table class="aui aui-table-list">
+                        
+                        <tbody>
+                            <tr>
+                                <td headers="author">
+                                    Type:
+                                </td>
+                                <td headers="commit">
+                                    <div class="checkbox">
+                                        <input class="checkbox" type="checkbox" name="checkBoxOne" id="checkBoxOne">
+                                        <label for="checkBoxOne">Receive email</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Status:
+                                </td>
+                                <td headers="commit">
+                                    <span class="aui-lozenge aui-lozenge-success">Success</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Components:
+                                </td>
+                                <td headers="commit">
+                                    <a href="#">2585eafcbca</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Labels:
+                                </td>
+                                <td headers="commit">
+                                    <a href="#">2585eafcbca</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Priority:
+                                </td>
+                                <td headers="commit">
+                                    <span class="aui-avatar aui-avatar-xsmall">
+                                        <span class="aui-avatar-inner">
+                                            <img src="images/avatar-person.svg" alt="" role="presentation" />
+                                        </span>
+                                    </span>
+                                    Medium
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Company (reporte):
+                                </td>
+                                <td headers="commit">
+                                    No define
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    HD Similar issues:
+                                </td>
+                                <td headers="commit">
+                                    <a href="#">SUP-83</a>
+                                    Prepare design
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Resolution Time:
+                                </td>
+                                <td headers="commit">
+                                    <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Resolution Time (team):
+                                </td>
+                                <td headers="commit">
+                                    <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Team:
+                                </td>
+                                <td headers="commit">
+                                    Developers
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    CRM property:
+                                </td>
+                                <td headers="commit">
+                                    Legal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Epic Estimate:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge class="aui-badge-primary">19M</aui-badge>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Epic Time Spent:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge>0</aui-badge>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Epic Time Remaning:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge>0</aui-badge>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Epic Ratio:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge>0</aui-badge>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td headers="author">
+                                    Reporter:
+                                </td>
+                                <td headers="commit">
+                                    <span class="aui-avatar aui-avatar-xsmall">
+                                        <span class="aui-avatar-inner">
+                                            <img src="images/avatar-person.svg" alt="" role="presentation" />
+                                        </span>
+                                    </span>
+                                    Antonina
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Voters:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge>0</aui-badge>
+                                    Antonina
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    </div>
+    <footer >
+        <span>Powered by Jira & Help Desk</span>
+    </footer>
+    <div id="left-side">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="resetpass.html">Reset pass</a></li>
+            <li><a href="singin.html">Sing Up</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="Myrequest.html"></a></li>
+        </ul>
+
+    </div>
+    <script>
+        function countRabbits() {
+          document.getElementById('left-side').classList.toggle("open")
+          console.log("asdsa")
+        }
+      </script>  
+</body>
+</html>
