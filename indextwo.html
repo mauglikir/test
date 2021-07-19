@@ -16,14 +16,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.js" integrity="sha512-iUshpSgJ26ryfeS5STpopGIsONtcP9nlIgLU24C8jwGPjsSTO5vqepMFU/KWc3fTIbNhbSTS/arJAGSnMPqQeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.js" integrity="sha512-MdAIAZrPjOF7Xfo/ukqMouLNfiTuNAIEy0DScIowIHx2wDNAYOAKCCbltIvuV37oZfQCiH/IGPWtPfz2htUn+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-browserfocus.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.css">
 </head>
 <body>
-    <div class="wrapp">
+    <div id="page" class="wrapp">
     <nav>
         <div class="nav-item">
             <div class="logo">
@@ -76,91 +75,90 @@
         </div>
         
     </nav>
-    <section id="form">
-        <div class="forma-main">
-            <div class="form-header">
-                <div class="form-header-avater">
-                    <div class="form-header-backgraund"></div>
-                    <div class="form-header-block-avatar">
-                        <table>
-                            <tr>
-                                <td class="form-body-lable" >
-                                    <label for="">Avatar:</label>
-                                </td>
-                                <td >
-                                    <img src="img/avatar_40.png" alt="">
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    
-                </div>
+    <div id="content" role="main">
+        <div class="main-banner">
+            <h1>Welcome to Help Center!</h1>
+            <p>Welcome to Help Center!</p>
+            <form ... class="aui main-banner-form">
+                <div class="field-group">
+                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                    <div class="buttons"><span class="aui-icon aui-icon-small aui-iconfont-search">Insert meaningful text here for accessibility</span></div>
                 
-    
-            </div>
-            <div class="form-body">
-                <table  >
-                    <tr>
-                        <td class="form-body-lable" >
-                            Username:
-                        </td>
-                        <td >
-                            Username
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Full name:
-                        </td>
-                        <td >
-                            Full name
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Email:
-                        </td>
-                        <td >
-                            examle@examle.com
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Lenguage:
-                        </td>
-                        <td >
-                            English (UK)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Time zone:
-                        </td>
-                        <td >
-                            System default (GMT+03:00) Moscow
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Do not notify me:
-                        </td>
-                        <td >
-                            <input type="checkbox" name="" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="form-body-lable" >
-                            Password:
-                        </td>
-                        <td >
-                            <a href="#" style="color: #0052CC; text-decoration: none;">Chang password</a>
-                        </td>
-                    </tr>
-                </table>
-    
+            </form>
+
+        </div>
+        
+        </div>
+        <div class="aui-main-page">
+            <div class="aui-group">
+                <div class="aui-item">
+                    <div class="aui-page-panel">
+                        <div class="aui-page-panel-inner">
+                            <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
+                            <main id="main" role="main" class="aui-page-panel-content">
+                                <h2>Extrernal Support</h2>
+                                <div class="aui-block-termit">
+                                    <img src="img/thunder.svg" alt="" srcset="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                        Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                        Donec eget lectus elit. 
+                                    </p>
+                                </div>
+        
+                                
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-item">
+                    <div class="aui-page-panel">
+                        <div class="aui-page-panel-inner">
+                            <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
+                            <main id="main" role="main" class="aui-page-panel-content">
+                                <h2>Internal Requests</h2>
+                                <div class="aui-block-termit">
+                                    <img src="img/comp.svg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                        Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                        Donec eget lectus elit.
+                                    </p>
+                                </div>
+                                
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-item">
+                    <div class="aui-page-panel">
+                        <div class="aui-page-panel-inner">
+                            <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
+                            <main id="main" role="main" class="aui-page-panel-content">
+                                <h2>HR</h2>
+                                <div class="aui-block-termit">
+                                    <img src="img/headfon.svg" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                        Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                        Donec eget lectus elit. 
+                                    </p>
+                                </div>
+                                
+                            </main>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        
+    </div>
+
+        
+    
     </div>
     <footer >
         <span>Powered by Jira & Help Desk</span>
@@ -185,6 +183,6 @@
           document.getElementById('btn-burger').classList.toggle('active')
           console.log("asdsa")
         }
-      </script>   
+      </script>  
 </body>
 </html>

@@ -109,8 +109,7 @@ nav ul li a{
 }
 .form-body-lable{
     text-align: right;
-    font-size: 0.9rem;
-    color: #6B778C;
+    padding: 7px 10px;
     min-width: 110px;
 }
 
@@ -174,7 +173,66 @@ footer{
 #left-side{
     display: none;
 }
+.aui-buttons-desk{
+    display: block;
+}
+.aui-buttons-mob{
+    display: none !important;
+}
+.aui-block-termit{
+    display: flex;
+    align-items: center;
+}
+.aui-block-termit p{
+    padding-left: 18px;
+    min-height: 8rem;
+}
+.aui-block-termit img{
+    height: 50px;
+    
+}
+#btn-burger.active > .btn-burger-item-one{
+        
+    opacity: 0;
+} 
+#btn-burger.active > .btn-burger-item-four{
+    opacity: 0;
+}
+#btn-burger.active > .btn-burger-item-two{
+    transform: rotate(45deg);
+} 
+#btn-burger.active > .btn-burger-item-three{
+    transform: rotate(-45deg);
+} 
+.btn-burger{
+    position: relative;
+    width: 34px;
+    height: 28px;
+    display: flex;
+}
+.btn-burger .btn-burger-item{
+    border-bottom: 4px solid #0052cc;
+    position: absolute;
+    width: 100%;
+    transition: 0.2s;
+}
+.btn-burger-item-one{
+    top: 0;
+}
+.btn-burger-item-two,.btn-burger-item-three{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-burger-item-four{
+    bottom: 0;
+}
 @media (max-width: 544px){
+    .aui-buttons-desk{
+        display: none !important;
+    }
+    .aui-buttons-mob{
+        display: inline-flex !important;
+    }
     .aui-main-page .aui-group{
         display: flex;
         flex-direction: column;
@@ -215,6 +273,7 @@ footer{
         background: #F4F5F7;
         left: -100vw;
         top:0;
+        margin: 14px;
         
     }
     #left-side.open{
@@ -227,5 +286,17 @@ footer{
         max-width: 90%;
         width: 90%;
         border: none;
+    }
+    .aui-nav .aui-nav-item{
+        padding: 7px 10px;
+    }
+    .main-banner-form .field-group {
+        display: flex;
+        padding: 0 !important;
+        align-items: center;
+        justify-content: center;
+    }
+    form.aui.aui-legacy-forms .long-field, form.aui:not(.aui-legacy-forms) .long-field {
+        max-width: 70% !important;
     }
 }

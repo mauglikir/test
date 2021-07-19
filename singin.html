@@ -30,20 +30,37 @@
             </div>
             <div class="aui-buttons">
                 <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="indextwo.html">Home2</a>
                 <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
-                <a class="aui-button aui-button-link aui-button-split-main" href="Myrequest.html">My requst</a>
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
             <aui-dropdown-menu id="split-container-dropdown">
                 <aui-item-link>
-                    <a class="aui-button aui-button-link aui-button-split-main" href="singin.html">Sing Up</a>
+                    <a  href="singin.html">Sing Up</a>
                 </aui-item-link>
                 <aui-item-link>
-                    <a class="aui-button aui-button-link aui-button-split-main" href="user.html">User</a>
+                    <a  href="resetpass.html">Reset pass</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="Myrequest.html">Sing Up</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="user.html">User</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="myIssu.html">MY issues</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="ha.html">Details</a>
                 </aui-item-link>
             </aui-dropdown-menu>
             <button class="btn-icon" onclick="countRabbits()">
-                <img src="img/icon_menu.svg" alt="">
+                <div id="btn-burger" class="btn-burger">
+                    <span class="btn-burger-item btn-burger-item-one"></span>
+                    <span class="btn-burger-item btn-burger-item-two"></span>
+                    <span class="btn-burger-item btn-burger-item-three"></span>
+                    <span class="btn-burger-item btn-burger-item-four"></span>
+                </div>
             </button>
         </div>
         <div class="nav-item nav-item-rigth">
@@ -113,19 +130,23 @@
         <span>Powered by Jira & Help Desk</span>
     </footer>
     <div id="left-side">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="resetpass.html">Reset pass</a></li>
-            <li><a href="singin.html">Sing Up</a></li>
-            <li><a href="user.html">User</a></li>
-            <li><a href="Myrequest.html"></a></li>
+        <ul class="aui-nav">
+            <li><a class="aui-nav-item" href="index.html">Home</a></li>
+            <li><a class="aui-nav-item" href="indextwo.html">Home</a></li>
+            <li><a class="aui-nav-item" href="login.html">Login</a></li>
+            <li><a class="aui-nav-item" href="resetpass.html">Reset pass</a></li>
+            <li><a class="aui-nav-item" href="singin.html">Sing Up</a></li>
+            <li><a class="aui-nav-item" href="user.html">User</a></li>
+            <li><a class="aui-nav-item" href="Myrequest.html">My requst</a></li>
+            <li><a class="aui-nav-item" href="Ha.html">details</a></li>
+            <li><a class="aui-nav-item" href="myIssu.html">My Issu</a></li>
         </ul>
 
     </div>
     <script>
         function countRabbits() {
           document.getElementById('left-side').classList.toggle("open")
+          document.getElementById('btn-burger').classList.toggle('active')
           console.log("asdsa")
         }
       </script>  

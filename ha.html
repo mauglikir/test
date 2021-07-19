@@ -30,20 +30,37 @@
             </div>
             <div class="aui-buttons">
                 <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="indextwo.html">Home2</a>
                 <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
-                <a class="aui-button aui-button-link aui-button-split-main" href="Myrequest.html">My requst</a>
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
             <aui-dropdown-menu id="split-container-dropdown">
                 <aui-item-link>
-                    <a class="aui-button aui-button-link aui-button-split-main" href="singin.html">Sing Up</a>
+                    <a  href="singin.html">Sing Up</a>
                 </aui-item-link>
                 <aui-item-link>
-                    <a class="aui-button aui-button-link aui-button-split-main" href="user.html">User</a>
+                    <a  href="resetpass.html">Reset pass</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="Myrequest.html">Sing Up</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="user.html">User</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="myIssu.html">MY issues</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="ha.html">Details</a>
                 </aui-item-link>
             </aui-dropdown-menu>
             <button class="btn-icon" onclick="countRabbits()">
-                <img src="img/icon_menu.svg" alt="">
+                <div id="btn-burger" class="btn-burger">
+                    <span class="btn-burger-item btn-burger-item-one"></span>
+                    <span class="btn-burger-item btn-burger-item-two"></span>
+                    <span class="btn-burger-item btn-burger-item-three"></span>
+                    <span class="btn-burger-item btn-burger-item-four"></span>
+                </div>
             </button>
         </div>
         <div class="nav-item nav-item-rigth">
@@ -65,14 +82,14 @@
                     <div class="aui-page-header-image">
                         <span class="aui-avatar aui-avatar-large aui-avatar-project">
                             <span class="aui-avatar-inner">
-                                <img alt="My awesome project" src="images/avatar-project.svg">
+                                <img alt="My awesome project" src="img/Lifesaver.svg">
                             </span>
                         </span>
                     </div>
                     <div class="aui-page-header-main">
                         <ol class="aui-nav aui-nav-breadcrumbs">
-                            <li><a href="https://example.com/">Breadcrumbs</a></li>
-                            <li><a href="https://example.com/" class="custom">Sub-page</a></li>
+                            <li><a href="">Breadcrumbs</a></li>
+                            <li><a href="" class="custom">Sub-page</a></li>
                             <li class="aui-nav-selected"><span class="assistive">Current page:</span> Direct parent page name</li>
                         </ol>
                         <h1>Design a posters</h1>
@@ -83,7 +100,7 @@
             
             <div class="aui-page-panel-inner">
                 <section class="aui-page-panel-content">
-                    <div class="aui-buttons">
+                    <div class="aui-buttons aui-buttons-desk">
                         <button class="aui-button">Comment</button>
                         <button class="aui-button">Open</button>
                         <button class="aui-button">Dev</button>
@@ -92,9 +109,27 @@
                         <button class="aui-button">Invite</button>
                         <button class="aui-button">Edit</button>
                     </div>
+                    <div class="aui-buttons aui-buttons-mob">
+                        <button class="aui-button aui-button-split-main">Comment</button>
+                        <button class="aui-button aui-button-split-main">Open</button>
+                        <button class="aui-button aui-button-split-main">Dev</button>
+                        <button class="aui-button aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
+                    </div>
+                    <aui-dropdown-menu id="split-container-dropdown">
+                        <aui-item-link>Resolve</aui-item-link>
+                        <aui-item-link>to Client</aui-item-link>
+                        <aui-item-link>Invite</aui-item-link>
+                        <aui-item-link>Edit</aui-item-link>
+                    </aui-dropdown-menu>
                     <table class="aui aui-table-list">
                         
                         <tbody>
+                            <tr>
+                                <td>
+                                    <h3>Details</h3>
+                                </td>
+                                <td></td>
+                            </tr>
                             <tr>
                                 <td headers="author">
                                     Type:
@@ -226,7 +261,14 @@
                             </tr>
                             
                         </tbody>
+                        
                         <tbody>
+                            <tr>
+                                <td>
+                                    <h3>People</h3>
+                                </td>
+                                <td></td>
+                            </tr>
                             <tr>
                                 <td headers="author">
                                     Reporter:
@@ -237,7 +279,7 @@
                                             <img src="images/avatar-person.svg" alt="" role="presentation" />
                                         </span>
                                     </span>
-                                    Antonina
+                                    Kelly Dorn
                                 </td>
                             </tr>
                             <tr>
@@ -246,9 +288,85 @@
                                 </td>
                                 <td headers="commit">
                                     <aui-badge>0</aui-badge>
-                                    Antonina
+                                    <a href="">Voit of this issues</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td headers="author">
+                                    Watcher:
+                                </td>
+                                <td headers="commit">
+                                    <aui-badge>2</aui-badge>
+                                    <a href="">Stop watching of this issues</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3>Dates</h3>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Created:
+                                </td>
+                                <td headers="commit">
+                                    <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Update:
+                                </td>
+                                <td headers="commit">
+                                    <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Calendar Start:
+                                </td>
+                                <td headers="commit">
+                                    <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Calendar Finish:
+                                </td>
+                                <td headers="commit">
+                                    <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3>Time tracker</h3>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Remaning:
+                                </td>
+                                <td headers="commit">
+                                    <aui-progressbar id="with-attributes" value="0" max="100"></aui-progressbar>
+                                    <span>0 m</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td headers="author">
+                                    Logged:
+                                </td>
+                                <td headers="commit">
+                                    <aui-progressbar id="with-attributes" value="50" max="100">40</aui-progressbar>
+                                    <span>5 m</span>
+                                </td>
+                            </tr>
+                            
                         </tbody>
                     </table>
                     
@@ -265,19 +383,44 @@
         <span>Powered by Jira & Help Desk</span>
     </footer>
     <div id="left-side">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="resetpass.html">Reset pass</a></li>
-            <li><a href="singin.html">Sing Up</a></li>
-            <li><a href="user.html">User</a></li>
-            <li><a href="Myrequest.html"></a></li>
-        </ul>
+        <header class="aui-page-header">
+            <div class="aui-page-header-inner">
+                <div class="aui-page-header-image">
+                    <span class="aui-avatar aui-avatar-large aui-avatar-project">
+                        <span class="aui-avatar-inner">
+                            <img alt="My awesome project" src="img/avatar_40.png">
+                        </span>
+                    </span>
+                </div>
+                <div class="aui-page-header-main">
+                    <h1>Xto Eto</h1>
+                </div>
+                
+            </div>
+        </header>
+        
+            <div class="aui-nav-header">
+                <strong>My menu</strong>
+            </div>
+            <ul class="aui-nav">
+                <li><a class="aui-nav-item" href="index.html">Home</a></li>
+                <li><a class="aui-nav-item" href="indextwo.html">Home</a></li>
+                <li><a class="aui-nav-item" href="login.html">Login</a></li>
+                <li><a class="aui-nav-item" href="resetpass.html">Reset pass</a></li>
+                <li><a class="aui-nav-item" href="singin.html">Sing Up</a></li>
+                <li><a class="aui-nav-item" href="user.html">User</a></li>
+                <li><a class="aui-nav-item" href="Myrequest.html">My requst</a></li>
+                <li><a class="aui-nav-item" href="Ha.html">details</a></li>
+                <li><a class="aui-nav-item" href="myIssu.html">My Issu</a></li>
+            </ul>
+        
+        
 
     </div>
     <script>
         function countRabbits() {
           document.getElementById('left-side').classList.toggle("open")
+          document.getElementById('btn-burger').classList.toggle('active')
           console.log("asdsa")
         }
       </script>  
