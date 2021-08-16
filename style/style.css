@@ -219,12 +219,12 @@ footer{
 } 
 .btn-burger{
     position: relative;
-    width: 34px;
-    height: 28px;
+    width: 30px;
+    height: 24px;
     display: flex;
 }
 .btn-burger .btn-burger-item{
-    border-bottom: 4px solid #0052cc;
+    border-bottom: 2px solid #0052cc;
     position: absolute;
     width: 100%;
     transition: 0.2s;
