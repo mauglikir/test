@@ -29,7 +29,7 @@ body{
     background-color: #fbfbfb !important;
 }
 #content{
-    padding: 0 20px !important;
+    padding: 0 32px !important;
 }
 .wrapp{
     height: 100%;
@@ -40,8 +40,8 @@ nav{
     display: flex;
     height: 50px;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
     position: relative;
     align-items: center;
 }
