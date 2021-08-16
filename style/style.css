@@ -194,15 +194,46 @@ footer{
 }
 .aui-block-termit{
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.aui-block-inner-block{
+    display: flex;
+}
+.aui-block-inner-block img{
+    max-width: 60px;
 }
 .aui-block-termit p{
     padding-left: 18px;
-    min-height: 8rem;
+    /* min-height: 8rem; */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .aui-block-termit img{
     height: 50px;
     
+}
+.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless):before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0;
+    speak: none;
+    content: "\f15b";
+    content: var(--aui-dropdown-ig);
+    font-family: Adgs Icons;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 16px;
+    line-height: 1;
+    margin-top: -8px;
+    position: absolute;
+    right: 4px;
+    text-indent: 0;
+    top: 65% !important;
+    width: 16px;
 }
 #btn-burger.active > .btn-burger-item-one{
         
