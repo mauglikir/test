@@ -32,7 +32,7 @@
                 <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
                 <a class="aui-button aui-button-link aui-button-split-main" href="indextwo.html">Home2</a>
                 <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
-                <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
+                <a class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</a>
             </div>
             <aui-dropdown-menu id="split-container-dropdown">
                 <aui-item-link>
@@ -85,73 +85,69 @@
         
     </nav>
     <div id="content" role="main">
-        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20">
-            <header class="aui-page-header">
-                <div class="aui-page-header-inner">
-                    <div class="aui-page-header-main d-flex d-flex-just header-hr">
-                        <h1>Log in to Customer Portal</h1>
-                            <button class="aui-button aui-dropdown2-trigger" aria-controls="example-dropdown">
-                                English
-                            </button>
-                            <aui-dropdown-menu id="example-dropdown">
-                                <aui-section label="Links">
-                                    <aui-item-link href="http://atlassian.com">Atlassian</aui-item-link>
-                                    <aui-item-link href="http://news.ycombinator.com">Hacker news</aui-item-link>
-                                    <aui-item-link href="http://github.com">Github</aui-item-link>
-                                </aui-section>
-                                <aui-section label="Browsers">
-                                    <aui-item-radio interactive checked>Chrome</aui-item-radio>
-                                    <aui-item-radio interactive>Firefox</aui-item-radio>
-                                    <aui-item-radio interactive disabled>Safari</aui-item-radio>
-                                </aui-section>
-                                <aui-section label="Languages">
-                                    <aui-item-checkbox interactive checked>Javascript</aui-item-checkbox>
-                                    <aui-item-checkbox interactive>Fortran</aui-item-checkbox>
-                                    <aui-item-checkbox interactive>Rust</aui-item-checkbox>
-                                </aui-section>
-                            </aui-dropdown-menu>
-                    </div>
-                </div>
-            </header>
-            <div class="aui-page-panel-inner">
-                <section class="aui-page-panel-content">
-                    <form class="aui top-label">
-                        <div class="field-group">
-                            <label for="text-input">User<span class="aui-icon icon-required">required</span></label>
-                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                        </div>
-                        <div class="field-group">
-                            <label for="text-input">Password<span class="aui-icon icon-required">required</span></label>
-                            <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                        </div>
-                        <div class="buttons-container d-flex d-flex-just">
-                            
-                                <button class="aui-button aui-button-primary">Login</button>
-                                <form action="#" method="post" class="aui">
-                                    <div class="checkbox" resolved="">
-                                        <input class="checkbox" type="checkbox" name="cbOne" id="cbOne" resolved=""><span class="aui-form-glyph"></span>
-                                        <label for="cbOne">Keep me logged in</label>
-                                    </div>
-                                </form>
-                            
-                        </div>
-                        <div class="field-group">
-                            <a href="">Sign up</a>
-                        </div>
-                        <div class="field-group">
-                            <a href="">Reset password</a>
-                        </div>
-                    </form>
-                </section>
-            </div>
+        <div class="main-banner">
+            <h1>Welcome to Help Center!</h1>
+            <p>Welcome to Help Center!</p>
+            <form ... class="aui main-banner-form">
+                <div class="field-group">
+                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                    <div class="buttons"><span class="aui-icon aui-icon-small aui-iconfont-search">Insert meaningful text here for accessibility</span></div>
+                
+            </form>
+
         </div>
+        
+        </div>
+        <div class="aui-main-page aui-page-panel-tabs">
+            <main id="main" role="main" class="aui-page-panel-content">
+                <div class="aui-block-inner-block aui-block-inner-block-tabs-vertical">
+                    <div class="img-block">
+                        <img src="img/comp.svg" alt="">
+                    </div>
+                <div class="aui-block-termit">
+                    
+                    <h2>Extrernal Support</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                        Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                        Donec eget lectus elit. 
+                    </p>
+                </div>
+
+                </div>
+                <div class="aui-block-inner-block aui-block-inner-block-tabs-vertical">
+                    <div class="img-block">
+                        <img src="img/thunder.svg" alt="" srcset="">
+                    </div>
+                    
+                <div class="aui-block-termit">
+                    
+                    <h2>Internal Requests</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                        Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                        Donec eget lectus elit.
+                    </p>
+                </div>
+
+                </div>
+                
+
+                
+            </main>
+            
+            
+        </div>
+        
     </div>
 
         
     
     </div>
     <footer >
-       <span>Powered by Jira & Help Desk</span>
+        <span>Powered by Jira & Help Desk</span>
     </footer>
     <div id="left-side">
         <ul class="aui-nav">

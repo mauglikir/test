@@ -1,0 +1,16 @@
+#content .cv-title{
+    display: none;
+}
+#content .sd-login-page-panel, #content .sd-login-page-panel .aui-page-panel-inner{
+    min-width: auto !important;
+}
+#content #login-form .buttons-container{
+    display: flex;
+    flex-direction: column;
+}
+#content #login-form .buttons-container .buttons{
+    order: 2;
+}
+#content #login-form .buttons-container{
+    margin: 12px 0 0 !important;
+}

@@ -2,6 +2,9 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
+.main-banner h1{
+    font-size: 28px;
+}    
 .d-flex{
     display: flex;
 }
@@ -117,6 +120,10 @@ nav ul li a{
     padding: 7px 10px;
     min-width: 110px;
 }
+.main-banner #text-input{
+height: 45px !important;
+max-width: 100%;
+}
 
 h5{
     color: #344563;
@@ -146,6 +153,25 @@ footer{
     border: none;
     border: 1px solid #fff !important;
 }
+.aui-page-panel-tabs{
+    margin: 0 auto;
+    width: 60%;
+    background: var(--aui-page-background);
+    border: solid var(--aui-page-border);
+    border-width: 0 0 1px;
+    box-sizing: border-box;
+}
+.aui-page-panel-tabs .aui-block-termit{
+    align-items: flex-start;
+}
+.aui-page-panel-tabs .aui-block-termit h2{
+    
+    padding-left: 18px;
+}
+.aui-page-panel-tabs .aui-block-inner-block img{
+    
+}
+
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
     height: 40vh;
@@ -158,7 +184,7 @@ footer{
     border-radius: 5px;
 }
 .main-banner-form{
-    width: 40rem;
+    width: 60%;
 }
 .main-banner-form .field-group{
     display: flex;
@@ -197,6 +223,17 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+.aui-block-inner-block-tabs-vertical{
+    padding-bottom: 14px;
+    align-items: center;
+}
+.aui-block-inner-block-tabs-vertical .img-block{
+    flex: 1 1 14%;
+}
+.aui-block-inner-block-tabs-vertical .aui-block-termit{
+    flex: 1 1 80%;
+}
+
 .aui-block-inner-block{
     display: flex;
 }
@@ -271,6 +308,9 @@ footer{
     bottom: 0;
 }
 @media (max-width: 544px){
+    .main-banner-form{
+        width: 100%;
+    }
     .aui-buttons-desk{
         display: none !important;
     }
