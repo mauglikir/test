@@ -198,6 +198,7 @@ footer{
 }
 .aui-page-panel-inner-shadow{
     box-shadow: 0px 0px 9px #6666663b;
+    min-height: 220px;
 }
 .aui-main-page{
     margin-top: 21px;
