@@ -37,6 +37,8 @@ body{
 .wrapp{
     height: 100%;
     overflow: auto;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 nav{
     background: transparent;
