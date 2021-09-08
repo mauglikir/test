@@ -243,6 +243,12 @@ footer{
 .aui-block-inner-block img{
     max-width: 60px;
 }
+.aui-block-termit-index p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .aui-block-termit p{
     padding-left: 18px;
     /* min-height: 8rem; */
