@@ -2,6 +2,10 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
+.back_door{
+    background: #fff;
+    padding: 7px;
+}    
 .pagination{
     display: flex;
     justify-content: center;
