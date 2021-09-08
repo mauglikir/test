@@ -2,6 +2,9 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
+   .basic-number{
+       vertical-align: middle !important;
+   } 
 .back_door{
     background: #fff;
     padding: 7px;
