@@ -2,6 +2,16 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}    
+.button-tabs-menu-my{
+    position: absolute;
+    right: 18px;
+    bottom: 4px;
+}
 .main-banner h1{
     font-size: 28px;
 }    
