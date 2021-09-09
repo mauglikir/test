@@ -5,9 +5,7 @@
    .basic-number{
        vertical-align: middle !important;
    } 
-.aui-page-panel-content h2{
-    margin-bottom: 14px;
-}   
+
 .back_door{
     background: #fff;
     padding: 7px;
@@ -269,9 +267,10 @@ footer{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-top: 14px;
 }
 .aui-block-termit p{
-    padding-left: 18px;
+    padding-left: 14px;
     /* min-height: 8rem; */
     display: -webkit-box;
     -webkit-line-clamp: 4;
