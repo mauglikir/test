@@ -5,7 +5,9 @@
    .basic-number{
        vertical-align: middle !important;
    } 
-
+.tabs-menu li a{
+    font-size: 1.2rem;
+}
 .back_door{
     background: #fff;
     padding: 7px;
