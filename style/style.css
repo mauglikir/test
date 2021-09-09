@@ -217,7 +217,7 @@ footer{
     
 }
 .tabs-menu-new{
-    padding-top: 20px;
+    padding-top: 20px !important;
 }
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
