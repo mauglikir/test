@@ -189,7 +189,7 @@ footer{
     
     padding-left: 18px;
 }
-..aui-block-termit h2{
+.aui-block-termit h2{
     padding-left: 14px;
 }
 .aui-page-panel-tabs .aui-block-inner-block img{
@@ -246,7 +246,6 @@ footer{
 .aui-block-termit{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .aui-block-inner-block-tabs-vertical{
     padding-bottom: 14px;
