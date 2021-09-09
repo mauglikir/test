@@ -13,6 +13,9 @@
    .basic-number{
        vertical-align: middle !important;
    } 
+.aui-tabs.vertical-tabs>.tabs-menu>.menu-item.active-tab a{
+    box-shadow: none !important;
+}   
 .tabs-menu li a{
     font-size: 1.2rem;
     outline: none !important;
