@@ -2,6 +2,12 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
+    button:active, button:focus {
+        outline: none !important;
+      }
+      button::-moz-focus-inner {
+        border: 0 !important;
+      }
    .basic-number{
        vertical-align: middle !important;
    } 
