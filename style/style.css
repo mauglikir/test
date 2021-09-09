@@ -26,6 +26,10 @@ textarea {resize:horizontal;}
 .tabs-menu li a:active, .tabs-menu li a:focus, .tabs-menu li a:hover{
     outline: none !important;
 }
+*:focus {
+    outline: none !important;
+}
+
 .back_door{
     background: #fff;
     padding: 7px;
