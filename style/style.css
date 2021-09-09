@@ -216,7 +216,9 @@ footer{
 .aui-page-panel-tabs .aui-block-inner-block img{
     
 }
-
+.tabs-menu-new{
+    padding-top: 20px;
+}
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
     height: 50vh;
