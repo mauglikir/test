@@ -267,7 +267,7 @@ footer{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-top: 14px;
+    margin-top: 14px !important;
 }
 .aui-block-termit p{
     padding-left: 14px;
