@@ -27,7 +27,7 @@ textarea {resize:horizontal;}
     outline: none !important;
 }
 *:focus, *:active {
-    outline: none !important;
+    outline-style: none !important;
 }
 
 .back_door{
