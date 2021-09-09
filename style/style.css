@@ -8,8 +8,8 @@
       button::-moz-focus-inner {
         border: 0 !important;
       }
-      input, textarea, select,a {outline:none !important;}
-      input:focus, textarea:focus, select:focus,a:focus {outline:none !important;}
+      input, textarea, select,a {outline:none !important; box-shadow: none;}
+      input:focus, textarea:focus, select:focus,a:focus {outline:none !important; box-shadow: none;}
    .basic-number{
        vertical-align: middle !important;
    } 
