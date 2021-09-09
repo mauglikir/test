@@ -9,6 +9,7 @@
         border: 0 !important;
       }
       input, textarea, select,a {outline:none !important;}
+      input:focus, textarea:focus, select:focus,a:focus {outline:none !important;}
    .basic-number{
        vertical-align: middle !important;
    } 
