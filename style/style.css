@@ -201,7 +201,7 @@ footer{
 .aui-page-panel-tabs{
     margin: 0 auto;
     width: 60%;
-    background: var(--aui-page-background);
+    /* background: var(--aui-page-background); */
     border: solid var(--aui-page-border);
     border-width: 0 0 1px;
     box-sizing: border-box;
