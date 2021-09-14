@@ -16,6 +16,22 @@
 a:focus{
     box-shadow: none !important;
 }
+.block-group{
+    display: flex;
+}
+.block-group table.aui>tbody>tr:first-child>td, .block-group table.aui>tbody>tr:first-child>th, .block-group table.aui>tfoot>tr:first-child>td, .block-group table.aui>tfoot>tr:first-child>th {
+    border-top: none !important;
+    border-bottom: 1px solid var(--aui-table-border-color);
+}
+.left-block{
+    padding-right: 7px;
+}
+.right-block{
+    padding-left: 7px;
+}
+.aui-item-margin{
+    margin-bottom: 14px;
+}
 #output{
     min-height: 45px;
     border: 2px dashed #6B778C;
@@ -372,6 +388,16 @@ footer{
     bottom: 0;
 }
 @media (max-width: 544px){
+    #content {
+        padding: 0 !important;
+    }
+    .block-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-block, .right-block{
+        padding: 0;
+    }
     .main-banner-form{
         width: 100%;
     }
