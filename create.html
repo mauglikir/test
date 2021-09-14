@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.tiny.cloud/1/cbibf6gy5l1o388ji4grj616bxfd968rei9f9b3lxhksmn1x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: '#mytextarea'
+        });
+      </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
@@ -20,6 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping-darkmode.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aui/9.4.0/aui/aui-prototyping.nodeps.min.css">
+    
 </head>
 <body>
     <div id="page" class="wrapp">
@@ -88,94 +95,99 @@
         
     </nav>
     <div id="content" role="main">
-        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20">
+        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20 page-100-input">
             <header class="aui-page-header">
                 <div class="aui-page-header-inner">
-                    <div class="aui-page-header-main d-flex d-flex-just header-hr">
-                        <h1>Sign up to HelpDesk</h1>
+                    <div class="aui-page-header-main d-flex d-flex-just">
+                        <h1>Incident</h1>
                             
                     </div>
                 </div>
             </header>
-            <div class="aui-page-panel-inner">
-                <section class="aui-page-panel-content">
-                    <div class="aui-tabs horizontal-tabs">
-                        <ul class="tabs-menu">
-                            <li class="menu-item active-tab">
-                                <a href="#tabs-example-first">Feild tab</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#tabs-example-second">Catalog cascading</a>
-                            </li>
-                        </ul>
-                        <div class="tabs-pane active-pane" id="tabs-example-first">
+            <div class="aui-tabs horizontal-tabs ">
+                <ul class="tabs-menu">
+                    <li class="menu-item active-tab">
+                        <a href="#tabs-example-first">Feild tab</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#tabs-example-second">Catalog cascading</a>
+                    </li>
+                </ul>
+                <div class="tabs-pane active-pane" id="tabs-example-first">
+                    <div class="aui-page-panel-inner">
+                        <section class="aui-page-panel-content">
                             <form class="aui top-label">
                                 <div class="field-group">
                                     <label for="text-input">Summary<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                    <input class="text long-field" placeholder="Text" type="text" id="text-input" name="text-input" title="Text input">
                                 </div>
                                 <div class="field-group">
-                                    <label for="text-input">Components</label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                    <label for="select-example">Components</label>
+                                    <select class="select" id="select-example" name="select-example">
+                                        <option></option>
+                                        <option>Component 1</option>
+                                        <option>Component 2</option>
+                                        <option>Component 3</option>
+                                        <option>Component 4</option>
+                                    </select>
+                                    <div class="description">Start typing to get a list of possible matches or press down to select</div>
                                 </div>
                                 <div class="field-group">
                                     <label for="text-input">Labels</label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                    <select class="select" id="select-example" name="select-example">
+                                        <option></option>
+                                        <option>red</option>
+                                        <option>white</option>
+                                        <option>go</option>
+                                        <option>rabbit</option>
+                                    </select>
+                                    <div class="description">Start typing to get a list of possible matches or press down to selectt</div>
                                 </div>
                                 <div class="field-group">
                                     <label for="text-input">Priority</label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
+                                    <select class="select" id="select-example" name="select-example">
+                                        <option>Select</option>
+                                        <option>Low</option>
+                                        <option>Middle</option>
+                                        <option>High</option>
+                                        <option>7 red line</option>
+                                    </select>
                                 </div>
+                                
                                 <div class="field-group">
-                                    <legend><span>Leave a comment</span></legend>
-                                    <div class="field-group">
-                                        <label for="textarea-id">Comment</label>
-                                        <textarea class="textarea long-field" name="comment" id="textarea-id" placeholder="Your comment here..."></textarea>
+                                    
+                                                <label for="textarea-id">Description</label>
+                                                <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
+                                            
+                                        
+                                </div>
+                                
+                                <div class="field-group">
+                                    <label for="text-input">Attachment</label>
+                                    <div   id="output" 
+                                        ondragenter="document.getElementById('output').textContent = ''; event.stopPropagation(); event.preventDefault();"
+                                        ondragover="event.stopPropagation(); event.preventDefault();"
+                                        ondrop="event.stopPropagation(); event.preventDefault();
+                                        dodrop(event);">
+                                        <span class="aui-icon aui-icon-small aui-iconfont-upload">Insert meaningful text here for accessibility</span>
+                                        &nbsp
+                                        Drop file to attach, or &nbsp <a href="#">browser</a> 
                                     </div>
                                 </div>
-                                <div class="buttons-container d-flex d-flex-just">
-                                    
-                                        <button class="aui-button aui-button-primary">Sing Up</button>
-                                    
-                                </div>
+                                
+                                
+                        
+                                
                             </form>
-                        </div>
-                        <div class="tabs-pane" id="tabs-example-second">
-                            <form class="aui top-label">
-                                <div class="field-group">
-                                    <label for="text-input">First Name<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="field-group">
-                                    <label for="text-input">Last Name<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="field-group">
-                                    <label for="text-input">Company<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="field-group">
-                                    <label for="text-input">Email<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="field-group">
-                                    <label for="text-input">Password<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="field-group">
-                                    <label for="text-input">Please enter the word as shown below<span class="aui-icon icon-required">required</span></label>
-                                    <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
-                                </div>
-                                <div class="buttons-container d-flex d-flex-just">
-                                    
-                                        <button class="aui-button aui-button-primary">Sing Up</button>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    
-                </section>
+                        </section>
+                </div>
+                </div>
+                <div class="tabs-pane" id="tabs-example-second">
+                    <h2>This is tab 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
             </div>
         </div>
     </div>
@@ -184,7 +196,7 @@
     
     </div>
     <footer >
-        <span>Powered by Jira & Help Desk</span>
+       <span>Powered by Jira & Help Desk</span>
     </footer>
     <div id="left-side">
         <ul class="aui-nav">
@@ -207,5 +219,28 @@
           console.log("asdsa")
         }
       </script>  
+      <script>
+        function dodrop(event)
+        {
+          var dt = event.dataTransfer;
+          var files = dt.files;
+        
+          var count = files.length;
+          output("File Count: " + count + "\n");
+        
+            for (var i = 0; i < files.length; i++) {
+              output(" File " + i + ":\n(" + (typeof files[i]) + ") : <" + files[i] + " > " +
+                     files[i].name + " " + files[i].size + "\n");
+            }
+        }
+        
+        function output(text)
+        {
+          document.getElementById("output").textContent += text;
+          //dump(text);
+        }
+        
+      </script>
+      
 </body>
 </html>

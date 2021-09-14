@@ -15,6 +15,16 @@
    } 
 a:focus{
     box-shadow: none !important;
+}
+#output{
+    min-height: 45px;
+    border: 2px dashed #6B778C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-100-input select{
+    max-width: none !important;
 }   
 .aui-tabs.vertical-tabs>.tabs-menu>.menu-item.active-tab a{
     box-shadow: none !important;
