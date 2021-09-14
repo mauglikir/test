@@ -25,9 +25,11 @@ a:focus{
 }
 .left-block{
     padding-right: 7px;
+    display: block;
 }
 .right-block{
     padding-left: 7px;
+    display: block;
 }
 .aui-item-margin{
     margin-bottom: 14px;
@@ -387,7 +389,13 @@ footer{
 .btn-burger-item-four{
     bottom: 0;
 }
+.mob-block-slider{
+    display: none;
+}
 @media (max-width: 544px){
+    .mob-block-slider{
+        display: block;
+    }
     #content {
         padding: 0 !important;
     }
@@ -396,7 +404,7 @@ footer{
         flex-direction: column;
     }
     .left-block, .right-block{
-        padding: 0;
+        display: none;
     }
     .main-banner-form{
         width: 100%;
