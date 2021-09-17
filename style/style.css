@@ -424,6 +424,7 @@ footer{
     }
     .main-banner{
         height: 14rem;
+        margin: 0 14px;
     }
     
     .forma-main{
@@ -455,7 +456,6 @@ footer{
         background: #F4F5F7;
         left: -100vw;
         top:0;
-        margin: 14px;
         
     }
     #left-side.open{
@@ -479,6 +479,6 @@ footer{
         justify-content: center;
     }
     form.aui.aui-legacy-forms .long-field, form.aui:not(.aui-legacy-forms) .long-field {
-        max-width: 50% !important;
+        max-width: 90% !important;
     }
 }
