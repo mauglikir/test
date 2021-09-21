@@ -23,71 +23,8 @@
 </head>
 <body>
     <div id="page" class="wrapp">
-    <nav>
-        <div class="nav-item">
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
-            </div>
-            <div class="aui-buttons">
-                <a class="aui-button aui-button-link aui-button-split-main" href="index.html">Home</a>
-                <a class="aui-button aui-button-link aui-button-split-main" href="indextwo.html">Home2</a>
-                <a class="aui-button aui-button-link aui-button-split-main" href="login.html">Login</a>
-                <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
-            </div>
-            <aui-dropdown-menu id="split-container-dropdown">
-                <aui-item-link>
-                    <a  href="create.html">Create</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="singin.html">Sing Up</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="resetpass.html">Reset pass</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="Myrequest.html">Sing Up</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="user.html">User</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="myIssu.html">MY issues</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="ha.html">Details</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="indextwo-tab.html">Страница с табами</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="index-listnotab.html">Страница лист</a>
-                </aui-item-link>
-                <aui-item-link>
-                    <a  href="index-list.html">Страница с горизогтальными табами</a>
-                </aui-item-link>
-            </aui-dropdown-menu>
-            <button class="btn-icon" onclick="countRabbits()">
-                <div id="btn-burger" class="btn-burger">
-                    <span class="btn-burger-item btn-burger-item-one"></span>
-                    <span class="btn-burger-item btn-burger-item-two"></span>
-                    <span class="btn-burger-item btn-burger-item-three"></span>
-                    <span class="btn-burger-item btn-burger-item-four"></span>
-                </div>
-            </button>
-        </div>
-        <div class="nav-item nav-item-rigth">
-            <div class="block-account">
-                <span>
-                    <a href="" style="color: #344563; text-decoration:none; margin-right:8px">
-                        My requst
-                    </a>
-                </span>
-                <img src="img/avatar.png" alt="">
-            </div>
-        </div>
-        
-    </nav>
-    <div id="content" role="main">
+        <?php include ("block/nav.php");?>
+        <div id="content" role="main">
         <div class="aui-page-panel  aui-page-focused p-20 m-auto-20">
             <header class="aui-page-header">
                 <div class="aui-page-header-inner">
@@ -179,33 +116,10 @@
             </div>
         </div>
     </div>
-
-        
+    </div>
     
     </div>
-    <footer >
-        <span>Powered by Jira & Help Desk</span>
-    </footer>
-    <div id="left-side">
-        <ul class="aui-nav">
-            <li><a class="aui-nav-item" href="index.html">Home</a></li>
-            <li><a class="aui-nav-item" href="indextwo.html">Home</a></li>
-            <li><a class="aui-nav-item" href="login.html">Login</a></li>
-            <li><a class="aui-nav-item" href="resetpass.html">Reset pass</a></li>
-            <li><a class="aui-nav-item" href="singin.html">Sing Up</a></li>
-            <li><a class="aui-nav-item" href="user.html">User</a></li>
-            <li><a class="aui-nav-item" href="Myrequest.html">My requst</a></li>
-            <li><a class="aui-nav-item" href="Ha.html">details</a></li>
-            <li><a class="aui-nav-item" href="myIssu.html">My Issu</a></li>
-        </ul>
-
-    </div>
-    <script>
-        function countRabbits() {
-          document.getElementById('left-side').classList.toggle("open")
-          document.getElementById('btn-burger').classList.toggle('active')
-          console.log("asdsa")
-        }
-      </script>  
+    <?php include ("block/footer.php");?>
+    <?php include ("block/mob-nav.php");?>
 </body>
 </html>

@@ -2,111 +2,6 @@
     font-family: "San Francisco Pro Fonts";
     src: url("../font/SF-Pro-Display-Medium.otf") format("opentype");
     }
-    button:active, button:focus {
-        outline: none !important;
-      }
-      button::-moz-focus-inner {
-        border: 0 !important;
-      }
-      input, textarea, select,a {outline:none !important; box-shadow: none;}
-      input:focus, textarea:focus, select:focus,a:focus {outline:none !important; box-shadow: none;}
-   .basic-number{
-       vertical-align: middle !important;
-   } 
-a:focus{
-    box-shadow: none !important;
-}
-.menu-block-nav li a{
-    color: #344563;
-    font-size: 1.2rem;
-}
-.menu-block-nav {
-    margin-top: 21px !important;
-}
-.menu-block-nav li{
-    padding: 10px 0 !important;
-    margin: 0 21px !important;
-    border-bottom: 1px solid #c7c7c7;
-    text-align: left;
-}
-.menu-block-user{
-    margin-top: 21px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.menu-block-user .aui-avatar-inner{
-    border: 3px solid #fff;
-}
-.menu-block-user-name{
-    margin-top: 7px;
-}
-.menu-block-user-mail{
-    margin-top: -7px;
-}
-.menu-block-user-mail a{
-    color: var(--aui-tabs-tab-text-color);
-}
-.block-group{
-    display: flex;
-}
-.block-group table.aui>tbody>tr:first-child>td, .block-group table.aui>tbody>tr:first-child>th, .block-group table.aui>tfoot>tr:first-child>td, .block-group table.aui>tfoot>tr:first-child>th {
-    border-top: none !important;
-    border-bottom: 1px solid var(--aui-table-border-color);
-}
-.left-block{
-    padding-right: 7px;
-    display: block;
-}
-.right-block{
-    padding-left: 7px;
-    display: block;
-}
-.aui-item-margin{
-    margin-bottom: 14px;
-}
-#output{
-    min-height: 45px;
-    border: 2px dashed #6B778C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page-100-input select{
-    max-width: none !important;
-}   
-.aui-tabs.vertical-tabs>.tabs-menu>.menu-item.active-tab a{
-    box-shadow: none !important;
-}   
-.tabs-menu li a{
-    font-size: 1.2rem;
-    outline: none !important;
-}
-.tabs-menu li a:active, .tabs-menu li a:focus, .tabs-menu li a:hover{
-    outline: none !important;
-}
-*:focus, *:active {
-    outline-style: none !important;
-}
-
-.back_door{
-    background: #fff;
-    padding: 7px;
-}    
-.pagination{
-    display: flex;
-    justify-content: center;
-    margin-top: 14px;
-}    
-.button-tabs-menu-my{
-    position: absolute;
-    right: 18px;
-    bottom: 4px;
-}
-.main-banner h1{
-    font-size: 28px;
-}    
 .d-flex{
     display: flex;
 }
@@ -134,13 +29,11 @@ body{
     background-color: #fbfbfb !important;
 }
 #content{
-    padding: 0 49px !important;
+    padding: 0 32px !important;
 }
 .wrapp{
     height: 100%;
     overflow: auto;
-    max-width: 1280px;
-    margin: 0 auto;
 }
 nav{
     background: transparent;
@@ -171,7 +64,7 @@ nav ul li a{
 
 .nav-item{
     display: flex;
-    align-items: self-start;
+    align-items: end;
 }
 .nav-item .aui-buttons{
     margin-left: 21px;
@@ -224,11 +117,6 @@ nav ul li a{
     padding: 7px 10px;
     min-width: 110px;
 }
-.main-banner #text-input{
-height: 45px !important;
-max-width: 100%;
-padding-left: 14px;
-}
 
 h5{
     color: #344563;
@@ -258,30 +146,9 @@ footer{
     border: none;
     border: 1px solid #fff !important;
 }
-.aui-page-panel-tabs{
-    margin: 0 auto;
-    width: 60%;
-    /* background: var(--aui-page-background); */
-    border: solid var(--aui-page-border);
-    border-width: 0 0 1px;
-    box-sizing: border-box;
-}
-.aui-page-panel-tabs .aui-block-termit{
-    align-items: flex-start;
-}
-
-.aui-block-termit h2{
-    padding-left: 14px;
-}
-.aui-page-panel-tabs .aui-block-inner-block img{
-    
-}
-.tabs-menu-new{
-    padding-top: 20px !important;
-}
 .main-banner{
     background-image: url(../img/bg-banner.jpg);
-    height: 50vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -291,7 +158,7 @@ footer{
     border-radius: 5px;
 }
 .main-banner-form{
-    width: 60%;
+    width: 40rem;
 }
 .main-banner-form .field-group{
     display: flex;
@@ -303,7 +170,6 @@ footer{
 }
 .aui-page-panel-inner-shadow{
     box-shadow: 0px 0px 9px #6666663b;
-    padding: 7px 0;
 }
 .aui-main-page{
     margin-top: 21px;
@@ -329,33 +195,16 @@ footer{
 .aui-block-termit{
     display: flex;
     flex-direction: column;
-}
-.aui-block-inner-block-tabs-vertical{
-    padding-bottom: 14px;
     align-items: center;
 }
-.aui-block-inner-block-tabs-vertical .img-block{
-    flex: 1 1 14%;
-}
-.aui-block-inner-block-tabs-vertical .aui-block-termit{
-    flex: 1 1 80%;
-}
-
 .aui-block-inner-block{
     display: flex;
 }
 .aui-block-inner-block img{
     max-width: 60px;
 }
-.aui-block-termit-index p{
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-top: 14px !important;
-}
 .aui-block-termit p{
-    padding-left: 14px;
+    padding-left: 18px;
     /* min-height: 8rem; */
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -421,29 +270,7 @@ footer{
 .btn-burger-item-four{
     bottom: 0;
 }
-.mob-block-slider{
-    display: none;
-}
 @media (max-width: 544px){
-    .aui-page-panel-tabs{
-        width: auto;
-    }
-    .mob-block-slider{
-        display: block;
-    }
-    #content {
-        padding: 0 !important;
-    }
-    .block-group{
-        display: flex;
-        flex-direction: column;
-    }
-    .left-block, .right-block{
-        display: none;
-    }
-    .main-banner-form{
-        width: 100%;
-    }
     .aui-buttons-desk{
         display: none !important;
     }
@@ -459,7 +286,6 @@ footer{
     }
     .main-banner{
         height: 14rem;
-        margin: 0 14px;
     }
     
     .forma-main{
@@ -491,16 +317,12 @@ footer{
         background: #F4F5F7;
         left: -100vw;
         top:0;
+        margin: 14px;
         
     }
     #left-side.open{
         left: 0;
         display: block;
-        margin-top: 42px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    z-index: 999;
-}
     }
     .aui-page-panel{
         margin: 20px auto !important;
@@ -519,6 +341,6 @@ footer{
         justify-content: center;
     }
     form.aui.aui-legacy-forms .long-field, form.aui:not(.aui-legacy-forms) .long-field {
-        max-width: 90% !important;
+        max-width: 50% !important;
     }
 }
