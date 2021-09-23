@@ -5,7 +5,7 @@
             </div>
             <div class="aui-buttons">
                 <a class="aui-button aui-button-link aui-button-split-main" href="index.php">Home</a>
-                <a class="aui-button aui-button-link aui-button-split-main" href="indextwo.php">Home2</a>
+                <a class="aui-button aui-button-link aui-button-split-main" href="index-two.php">Home2</a>
                 <a class="aui-button aui-button-link aui-button-split-main" href="login.php">Login</a>
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
