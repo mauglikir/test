@@ -253,7 +253,7 @@ footer{
 .aui-page-panel{
     margin: 20px auto;
     border-radius: 5px;
-    max-width: 576px;
+    max-width: 576px !important;
     width: 576px;
     border: none;
     border: 1px solid #fff !important;
@@ -500,7 +500,7 @@ footer{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     z-index: 999;
-}
+
     }
     .aui-page-panel{
         margin: 20px auto !important;
@@ -521,4 +521,5 @@ footer{
     form.aui.aui-legacy-forms .long-field, form.aui:not(.aui-legacy-forms) .long-field {
         max-width: 90% !important;
     }
+    
 }
