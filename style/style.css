@@ -425,6 +425,9 @@ footer{
     display: none;
 }
 @media (max-width: 544px){
+    .aui-main-page{
+        padding: 0 14px;
+    }
     .aui-page-panel-tabs{
         width: auto;
     }
