@@ -16,6 +16,9 @@
 a:focus{
     box-shadow: none !important;
 }
+.aui-main-page{
+    padding: 0;
+}
 .menu-block-nav li a{
     color: #344563;
     font-size: 1.2rem;
