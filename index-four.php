@@ -24,9 +24,9 @@
 <body>
     <div id="page" class="wrapp">
         <?php include ("block/nav.php");?>
-    <div id="content" role="main">
-        <?php include ("block/banner.php");?>
-    </div>
+        <div id="content" role="main">
+            <?php include ("block/banner.php");?>
+        </div>
     
     <div class="aui-main-page">
             <div class="aui-tabs horizontal-tabs">
@@ -198,6 +198,7 @@
             
         </div>
         </div>
+        </div>        
     <?php include ("block/footer.php");?>
     <?php include ("block/mob-nav.php");?>
 </body>
