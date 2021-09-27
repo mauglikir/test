@@ -447,7 +447,7 @@ footer{
         display: block;
     }
     #content {
-        padding: 0 !important;
+        padding: 0 14px!important;
     }
     .block-group{
         display: flex;
