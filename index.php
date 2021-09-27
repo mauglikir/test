@@ -34,7 +34,8 @@
                         <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
                             <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
                             <main id="main" role="main" class="aui-page-panel-content">
-                                <h2>Extrernal Support</h2>
+                            <div class="aui-block-termit">
+                            <h2>Extrernal Support</h2>
         
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -46,6 +47,8 @@
                                     Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
                                     Donec eget lectus elit. 
                                 </p>
+                            </div>
+                                
                             </main>
                         </div>
                     </div>
@@ -55,31 +58,44 @@
                         <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
                             <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
                             <main id="main" role="main" class="aui-page-panel-content">
-                                <h2>Internal Requests</h2>
-        
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
-                                    Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
-                                    Donec eget lectus elit.
-                                </p>
-                            </main>
-                        </div>
-                    </div>
-                </div>
-                <div class="aui-item">
-                    <div class="aui-page-panel">
-                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
-                            <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
-                            <main id="main" role="main" class="aui-page-panel-content">
-                                <h2>HR</h2>
+                            <div class="aui-block-termit">
+                            <h2>Internal Requests</h2>
         
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
                                     Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
                                     Donec eget lectus elit. 
+                                    orem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                    Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                    Donec eget lectus elit. 
                                 </p>
+                            </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-item">
+                    <div class="aui-page-panel">
+                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                            <!-- The redundant `role` attribute is required for the VoiceOver + Safari combo -->
+                            <main id="main" role="main" class="aui-page-panel-content">
+                            <div class="aui-block-termit">
+                            <h2>HR</h2>
+        
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                    Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                    Donec eget lectus elit. 
+                                    orem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus vitae diam in arcu ultricies gravida sed sed nisl.
+                                    Curabitur nibh nulla, semper non pharetra eu, suscipit vitae eros.
+                                    Donec eget lectus elit. 
+                                </p>
+                            </div>
+                                
                             </main>
                         </div>
                     </div>

@@ -1,7 +1,10 @@
 <nav>
         <div class="nav-item">
             <div class="logo">
-                <img src="img/logo.svg" alt="">
+            <a href="index.php">
+            <img src="img/logo.svg" alt="">
+            </a>
+                
             </div>
             <div class="aui-buttons">
                 <a class="aui-button aui-button-link aui-button-split-main" href="index.php">Home</a>
@@ -10,6 +13,12 @@
                 <button class="aui-button aui-button-link aui-dropdown2-trigger aui-button-split-more" aria-controls="split-container-dropdown">Split more</button>
             </div>
             <aui-dropdown-menu id="split-container-dropdown">
+            <aui-item-link>
+                    <a  href="index-three.php">index3</a>
+                </aui-item-link>
+                <aui-item-link>
+                    <a  href="index-four.php">index3</a>
+                </aui-item-link>
                 <aui-item-link>
                     <a  href="singin.php">Sing Up</a>
                 </aui-item-link>
