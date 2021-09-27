@@ -197,6 +197,7 @@
             </div>
             
         </div>
+        </div>
     <?php include ("block/footer.php");?>
     <?php include ("block/mob-nav.php");?>
 </body>
