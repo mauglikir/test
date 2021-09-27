@@ -431,7 +431,7 @@ footer{
     bottom: 0;
 }
 .mob-block-slider{
-    display: none;
+    display: none !important;
 }
 @media (max-width: 544px){
     .button-tabs-menu-my span:nth-child(2){
@@ -444,7 +444,11 @@ footer{
         width: auto;
     }
     .mob-block-slider{
-        display: block;
+        display: block !important;
+        width: 100vw;
+    }
+    .mob-block-slider .aui-item{
+        margin: 0 7px;
     }
     #content {
         padding: 0 14px!important;
