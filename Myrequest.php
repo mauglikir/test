@@ -49,7 +49,7 @@
             <li class="menu-item" role="presentation">
                 <a href="#tabs-example-third" id="aui-uid-2" role="tab" aria-selected="false">PMs</a>
             </li>
-            <button class="aui-button button-tabs-menu-my" ><span class="aui-icon aui-icon-small aui-iconfont-export">Insert meaningful text here for accessibility</span> Export</button>
+            <button class="aui-button button-tabs-menu-my" ><span class="aui-icon aui-icon-small aui-iconfont-export">Insert meaningful text here for accessibility</span> <span>Export</span> </button>
         </ul>
         <div class="tabs-pane active-pane" id="tabs-example-first" role="tabpanel" aria-labelledby="aui-uid-0">
             <h3>Designers</h3>
