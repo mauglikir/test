@@ -25,7 +25,7 @@
     <div id="page" class="wrapp">
         <?php include ("block/nav.php");?>
         <div id="content" role="main">
-        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20 page-100-input">
+        <div class="aui-page-panel  aui-page-focused p-20 m-auto-20 page-100-input aui-page-panel-inner-shadow">
             <header class="aui-page-header">
                 <div class="aui-page-header-inner">
                     <div class="aui-page-header-main d-flex d-flex-just">
