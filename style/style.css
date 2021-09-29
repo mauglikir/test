@@ -16,6 +16,9 @@
 a:focus{
     box-shadow: none !important;
 }
+.main-banner-form .buttons .aui-iconfont-search{
+    color: #B3BAC5 !important;
+}
 .aui-main-page{
     padding: 0;
 }
@@ -233,10 +236,10 @@ nav ul li a{
     min-width: 110px;
 }
 .main-banner #text-input{
-height: 45px !important;
-max-width: 100%;
-padding-left: 14px;
-}
+    height: 45px !important;
+    max-width: 100%;
+    padding-left: 14px;
+    }
 
 h5{
     color: #344563;
@@ -280,9 +283,6 @@ footer{
 
 .aui-block-termit h2{
     padding-left: 14px;
-}
-.aui-page-panel-tabs .aui-block-inner-block img{
-    
 }
 .tabs-menu-new{
     padding-top: 20px !important;
@@ -463,6 +463,7 @@ footer{
     .main-banner-form{
         width: 100%;
     }
+    
     .aui-buttons-desk{
         display: none !important;
     }
