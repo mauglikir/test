@@ -236,6 +236,14 @@ nav ul li a{
 .form-body table, .form-header-block-avatar table{
     margin-left: 10%;
 }
+.form-header-block-avatar img{
+    border: 2px solid #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
 .form-header-backgraund{
     background-image: url(../img/backgraund_user.png);
     height: 50px;

@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.tiny.cloud/1/cbibf6gy5l1o388ji4grj616bxfd968rei9f9b3lxhksmn1x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: '#mytextarea'
+        });
+      </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/mode/css/css.min.js"></script>
@@ -125,5 +131,27 @@
     </div>
     <?php include ("block/footer.php");?>
     <?php include ("block/mob-nav.php");?>
+    <script>
+        function dodrop(event)
+        {
+          var dt = event.dataTransfer;
+          var files = dt.files;
+        
+          var count = files.length;
+          output("File Count: " + count + "\n");
+        
+            for (var i = 0; i < files.length; i++) {
+              output(" File " + i + ":\n(" + (typeof files[i]) + ") : <" + files[i] + " > " +
+                     files[i].name + " " + files[i].size + "\n");
+            }
+        }
+        
+        function output(text)
+        {
+          document.getElementById("output").textContent += text;
+          //dump(text);
+        }
+        
+      </script>
 </body>
 </html>
