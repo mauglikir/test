@@ -16,6 +16,19 @@
 a:focus{
     box-shadow: none !important;
 }
+body{
+    color: #172B4D;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #172B4D;
+}
+.aui-button:link, .aui-button:visited, a.aui-button {
+    background-color: var(--aui-btn-bg);
+    background-image: none;
+    border: 1px solid var(--aui-btn-border);
+    color: #172B4D !important;
+    text-decoration: none;
+}
 .main-banner-form .buttons .aui-iconfont-search{
     color: #B3BAC5 !important;
 }
