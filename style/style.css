@@ -22,6 +22,14 @@ body{
 h1, h2, h3, h4, h5, h6 {
     color: #172B4D;
 }
+.aui-page-focused .aui-page-panel-content>form.aui .buttons-container-new {
+    border-bottom: 1px solid var(--aui-border);
+    border-top: none !important;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 0 !important;
+}
 .aui-button:link, .aui-button:visited, a.aui-button {
     background-color: var(--aui-btn-bg);
     background-image: none;
@@ -294,8 +302,8 @@ footer{
     margin: 0 auto;
     width: 60%;
     /* background: var(--aui-page-background); */
-    border: solid var(--aui-page-border);
-    border-width: 0 0 1px;
+    /* border: solid var(--aui-page-border);
+    border-width: 0 0 1px; */
     box-sizing: border-box;
 }
 .aui-page-panel-tabs .aui-block-termit{

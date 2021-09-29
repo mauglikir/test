@@ -64,7 +64,7 @@
                             <label for="text-input">Password<span class="aui-icon icon-required">required</span></label>
                             <input class="text long-field" type="text" id="text-input" name="text-input" title="Text input">
                         </div>
-                        <div class="buttons-container d-flex d-flex-just">
+                        <div class="buttons-container buttons-container-new d-flex d-flex-just">
                             
                                 <button class="aui-button aui-button-primary">Login</button>
                                 <form action="#" method="post" class="aui">
