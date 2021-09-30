@@ -22,6 +22,9 @@ body{
 h1, h2, h3, h4, h5, h6 {
     color: #172B4D;
 }
+.block-comment{
+    padding: 7px 14px;
+}
 .aui-page-focused .aui-page-panel-content>form.aui .buttons-container-new {
     border-bottom: 1px solid var(--aui-border);
     border-top: none !important;
@@ -82,13 +85,16 @@ h1, h2, h3, h4, h5, h6 {
     border-top: none !important;
     border-bottom: 1px solid var(--aui-table-border-color);
 }
-.left-block{
+.left-block, .right-block{
     padding-right: 7px;
     display: block;
 }
-.right-block{
-    padding-left: 7px;
-    display: block;
+.left-block .aui-table-list h3, .right-block .aui-table-list h3{
+    display: flex;
+    align-items: center;
+}
+.left-block .aui-table-list h3 span .right-block .aui-table-list h3 span{
+    margin-right: 7px;
 }
 .aui-item-margin{
     margin-bottom: 14px;

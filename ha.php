@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.tiny.cloud/1/cbibf6gy5l1o388ji4grj616bxfd968rei9f9b3lxhksmn1x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: '#mytextarea'
+        });
+      </script>
     <script src="slick-1.8.1/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.15.4/sinon.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.13.4/codemirror.min.js"></script>
@@ -76,7 +82,7 @@
                     <div class="aui-main-page">
                         <div class="aui-group block-group">
                             <div class="left-block">
-                                <div class="aui-item">
+                                <div class="aui-item aui-item-margin"">
                                     <div class="aui-page-panel">
                                         <div class="aui-page-panel-inner-shadow aui-page-panel-inner">
                                             <table class="aui aui-table-list">
@@ -225,6 +231,33 @@
                                         </div>
                                     </div>
                                     
+                                </div>
+                                <div class="aui-item aui-item-margin">
+                                    <div class="aui-page-panel">
+                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                            <table class="aui aui-table-list">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-comment">Insert meaningful text here for accessibility</span>Comment</span> People</h3>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    
+                                                   
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <div class="block-comment">
+                                    
+                                                
+                                                <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
+                                            
+                                        
+                                </div>
+                                        </div>
+                                    </div>
+                                   
                                 </div>
                             </div>
                             <div class="right-block">
