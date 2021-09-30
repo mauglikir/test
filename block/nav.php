@@ -20,6 +20,9 @@
                     <a  href="index-three.php">index3</a>
                 </aui-item-link>
                 <aui-item-link>
+                    <a  href="index-icon.php">index-icon</a>
+                </aui-item-link>
+                <aui-item-link>
                     <a  href="index-four.php">index3</a>
                 </aui-item-link>
                 <aui-item-link>
