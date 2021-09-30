@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
 }
-.left-block .aui-table-list h3 span .right-block .aui-table-list h3 span{
+.left-block .aui-table-list h3 .aui-icon, .right-block .aui-table-list h3 .aui-icon{
     margin-right: 7px;
 }
 .aui-item-margin{
