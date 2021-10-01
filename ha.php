@@ -687,6 +687,34 @@
                                             </table>
                                         </div>
                                     </div>
+                                    
+                                   
+                                </div>
+                                <div class="aui-item aui-item-margin">
+                                    <div class="aui-page-panel">
+                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                            <table class="aui aui-table-list">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-comment">Insert meaningful text here for accessibility</span>Comment</span> People</h3>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    
+                                                   
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <div class="block-comment">
+                                    
+                                                
+                                                <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
+                                            
+                                        
+                                </div>
+                                        </div>
+                                    </div>
                                    
                                 </div>
                                 
