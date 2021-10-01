@@ -47,6 +47,9 @@
     
             </div>
             <div class="form-body">
+                <div class="button-edit">
+                    <span class="aui-icon aui-icon-small aui-iconfont-edit">Insert meaningful text here for accessibility</span>
+                </div>
                 <table  >
                     <tr>
                         <td class="form-body-lable" >
@@ -105,6 +108,13 @@
                         </td>
                     </tr>
                 </table>
+                <div class="buttons-container-user d-flex d-flex-just">
+                            
+                                <button class="aui-button aui-button-primary">Edit</button>
+                                
+                            
+                        </div>
+                
     
             </div>
         </div>

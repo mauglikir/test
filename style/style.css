@@ -22,8 +22,22 @@ body{
 h1, h2, h3, h4, h5, h6 {
     color: #172B4D;
 }
+.buttons-container-user{
+    border-top: 1px solid var(--aui-border);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .block-comment{
     padding: 7px 14px;
+}
+.button-edit{
+    position: absolute;
+    right: 14px;
+    top: 7px;
+    color: #B3BAC5;
 }
 .aui-page-header-main-h{
     display: flex;
@@ -256,6 +270,7 @@ nav ul li a{
     border-radius: 4px;
     margin-top: 24px;
     background-color: white;
+    position: relative;
 }
 .form-body table, .form-header-block-avatar table{
     margin-left: 10%;
