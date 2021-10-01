@@ -35,7 +35,16 @@
             <header class="aui-page-header">
                 <div class="aui-page-header-inner">
                     <div class="aui-page-header-main d-flex d-flex-just">
-                        <h1>Incident</h1>
+                        <div class="aui-page-header-main-h">
+                            <div class="aui-page-header-main-h-img">
+                                <img src="img/Lifesaver.svg" alt="" srcset="">
+                            </div>
+                            <div class="aui-page-header-main-h-lable">
+                                <span><a href="#">Support</a></span>
+                                <h1>Incident</h1>
+                            </div>
+                        </div>
+                        
                             
                     </div>
                 </div>

@@ -25,6 +25,16 @@ h1, h2, h3, h4, h5, h6 {
 .block-comment{
     padding: 7px 14px;
 }
+.aui-page-header-main-h{
+    display: flex;
+    align-items: center;
+}
+.aui-page-header-main-h div:nth-child(2){
+    margin-left: 7px;
+}
+.aui-page-header-main-h h1{
+    margin: 0;
+}
 .aui-page-focused .aui-page-panel-content>form.aui .buttons-container-new {
     border-bottom: 1px solid var(--aui-border);
     border-top: none !important;
