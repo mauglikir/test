@@ -108,12 +108,6 @@
                         </td>
                     </tr>
                 </table>
-                <div class="buttons-container-user d-flex d-flex-just">
-                            
-                                <button class="aui-button aui-button-primary">Edit</button>
-                                
-                            
-                        </div>
                 
     
             </div>

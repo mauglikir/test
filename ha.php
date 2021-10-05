@@ -81,326 +81,330 @@
                     </aui-dropdown-menu>
                     <div class="aui-main-page">
                         <div class="aui-group block-group">
-                            <div class="left-block">
-                                <div class="aui-item aui-item-margin"">
-                                    <div class="aui-page-panel">
-                                        <div class="aui-page-panel-inner-shadow aui-page-panel-inner">
-                                            <table class="aui aui-table-list">
-                            
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3>Details</h3>
-                                                        </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Type:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <div class="checkbox">
-                                                                <input class="checkbox" type="checkbox" name="checkBoxOne" id="checkBoxOne">
-                                                                <label for="checkBoxOne">Receive email</label>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Status:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <span class="aui-lozenge aui-lozenge-success">Success</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Components:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <a href="#">2585eafcbca</a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Labels:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <a href="#">2585eafcbca</a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Priority:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <span class="aui-avatar aui-avatar-xsmall">
-                                                                <span class="aui-avatar-inner">
-                                                                    <img src="images/avatar-person.svg" alt="" role="presentation" />
-                                                                </span>
-                                                            </span>
-                                                            Medium
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Company (reporte):
-                                                        </td>
-                                                        <td headers="commit">
-                                                            No define
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            HD Similar issues:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <a href="#">SUP-83</a>
-                                                            Prepare design
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Resolution Time:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Resolution Time (team):
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Team:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            Developers
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            CRM property:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            Legal
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Epic Estimate:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge class="aui-badge-primary">19M</aui-badge>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Epic Time Spent:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge>0</aui-badge>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Epic Time Remaning:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge>0</aui-badge>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Epic Ratio:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge>0</aui-badge>
-                                                        </td>
-                                                    </tr>
-                                                    
-                                                </tbody>
-                                                
-                                                
-                                            </table>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="aui-item aui-item-margin">
-                                    <div class="aui-page-panel">
-                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
-                                            <table class="aui aui-table-list">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-comment">Insert meaningful text here for accessibility</span>Comment</span> People</h3>
-                                                        </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    
-                                                   
-                                                    
-                                                </tbody>
-                                            </table>
-                                            <div class="block-comment">
-                                    
-                                                
-                                                <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
-                                            
-                                        
-                                </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            <div class="right-block">
+                            <div class="base-block">
+                                <div class="left-block">
+                                    <div class="aui-item aui-item-margin"">
+                                        <div class="aui-page-panel">
+                                            <div class="aui-page-panel-inner-shadow aui-page-panel-inner">
+                                                <table class="aui aui-table-list">
                                 
-                                <div class="aui-item aui-item-margin">
-                                    <div class="aui-page-panel">
-                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
-                                            <table class="aui aui-table-list">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-group">Insert meaningful text here for accessibility</span> People</h3>
-                                                        </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Reporter:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <span class="aui-avatar aui-avatar-xsmall">
-                                                                <span class="aui-avatar-inner">
-                                                                    <img src="images/avatar-person.svg" alt="" role="presentation" />
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3>Details</h3>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Type:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <div class="checkbox">
+                                                                    <input class="checkbox" type="checkbox" name="checkBoxOne" id="checkBoxOne">
+                                                                    <label for="checkBoxOne">Receive email</label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Status:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <span class="aui-lozenge aui-lozenge-success">Success</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Components:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <a href="#">2585eafcbca</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Labels:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <a href="#">2585eafcbca</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Priority:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <span class="aui-avatar aui-avatar-xsmall">
+                                                                    <span class="aui-avatar-inner">
+                                                                        <img src="images/avatar-person.svg" alt="" role="presentation" />
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            Kelly Dorn
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Voters:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge>0</aui-badge>
-                                                            <a href="">Voit of this issues</a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Watcher:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-badge>2</aui-badge>
-                                                            <a href="">Stop watching of this issues</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                <div class="aui-item aui-item-margin">
-                                    <div class="aui-page-panel">
-                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
-                                            <table class="aui aui-table-list">
-                                               
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-calendar">Insert meaningful text here for accessibility</span> Dates</h3>
-                                                        </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Created:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Update:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Calendar Start:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Calendar Finish:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                
-                                            </table>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                <div class="aui-item aui-item-margin">
-                                    <div class="aui-page-panel">
-                                        <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
-                                            <table class="aui aui-table-list">
-                                                
-                                                
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <h3><span class="aui-icon aui-icon-small aui-iconfont-graph-line">Insert meaningful text here for accessibility</span> Time tracker</h3>
-                                                        </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Remaning:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-progressbar id="with-attributes" value="0" max="100"></aui-progressbar>
-                                                            <span>0 m</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td headers="author">
-                                                            Logged:
-                                                        </td>
-                                                        <td headers="commit">
-                                                            <aui-progressbar id="with-attributes" value="50" max="100">40</aui-progressbar>
-                                                            <span>5 m</span>
-                                                        </td>
-                                                    </tr>
+                                                                Medium
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Company (reporte):
+                                                            </td>
+                                                            <td headers="commit">
+                                                                No define
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                HD Similar issues:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <a href="#">SUP-83</a>
+                                                                Prepare design
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Resolution Time:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Resolution Time (team):
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-progressbar id="with-attributes" value="5" max="100"></aui-progressbar>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Team:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                Developers
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                CRM property:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                Legal
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Epic Estimate:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge class="aui-badge-primary">19M</aui-badge>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Epic Time Spent:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge>0</aui-badge>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Epic Time Remaning:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge>0</aui-badge>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Epic Ratio:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge>0</aui-badge>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
                                                     
-                                                </tbody>
-                                            </table>
+                                                    
+                                                </table>
+                                            </div>
                                         </div>
+                                        
                                     </div>
-                                   
+                                    
+                                </div>
+                                <div class="right-block">
+                                    
+                                    <div class="aui-item aui-item-margin">
+                                        <div class="aui-page-panel">
+                                            <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                                <table class="aui aui-table-list">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3><span class="aui-icon aui-icon-small aui-iconfont-group">Insert meaningful text here for accessibility</span> People</h3>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Reporter:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <span class="aui-avatar aui-avatar-xsmall">
+                                                                    <span class="aui-avatar-inner">
+                                                                        <img src="images/avatar-person.svg" alt="" role="presentation" />
+                                                                    </span>
+                                                                </span>
+                                                                Kelly Dorn
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Voters:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge>0</aui-badge>
+                                                                <a href="">Voit of this issues</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Watcher:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-badge>2</aui-badge>
+                                                                <a href="">Stop watching of this issues</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="aui-item aui-item-margin">
+                                        <div class="aui-page-panel">
+                                            <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                                <table class="aui aui-table-list">
+                                                
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3><span class="aui-icon aui-icon-small aui-iconfont-calendar">Insert meaningful text here for accessibility</span> Dates</h3>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Created:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Update:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Calendar Start:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Calendar Finish:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <time datetime="2013-11-28T11:52+1100">11:52 AEST, November 28 2013</time>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="aui-item aui-item-margin">
+                                        <div class="aui-page-panel">
+                                            <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                                <table class="aui aui-table-list">
+                                                    
+                                                    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3><span class="aui-icon aui-icon-small aui-iconfont-graph-line">Insert meaningful text here for accessibility</span> Time tracker</h3>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Remaning:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-progressbar id="with-attributes" value="0" max="100"></aui-progressbar>
+                                                                <span>0 m</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td headers="author">
+                                                                Logged:
+                                                            </td>
+                                                            <td headers="commit">
+                                                                <aui-progressbar id="with-attributes" value="50" max="100">40</aui-progressbar>
+                                                                <span>5 m</span>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
                             </div>
-                            
+                           
+
+
+                            <div class="center-block">
+                                <div class="aui-item aui-item-margin">
+                                        <div class="aui-page-panel">
+                                            <div class="aui-page-panel-inner aui-page-panel-inner-shadow">
+                                                <table class="aui aui-table-list">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h3><span class="aui-icon aui-icon-small aui-iconfont-comment">Insert meaningful text here for accessibility</span>Comment</span> People</h3>
+                                                            </td>
+                                                            <td></td>
+                                                        </tr>
+                                                        
+                                                    
+                                                        
+                                                    </tbody>
+                                                </table>
+                                                <div class="block-comment">
+                                        
+                                                    
+                                                    <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
+                                                
+                                            
+                                    </div>
+                                </div>
+                            </div>
                             <div class="mob-block-slider">
                                 <div class="aui-item">
                                     <div class="aui-page-panel">
@@ -712,7 +716,7 @@
                                                 <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
                                             
                                         
-                                </div>
+                                        </div>
                                         </div>
                                     </div>
                                    

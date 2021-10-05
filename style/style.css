@@ -22,6 +22,12 @@ body{
 h1, h2, h3, h4, h5, h6 {
     color: #172B4D;
 }
+.base-block{
+    display: flex;
+}
+.center-block .aui-page-panel{
+    max-width: none !important;
+}
 .buttons-container-user{
     border-top: 1px solid var(--aui-border);
     margin-top: 20px;
@@ -377,9 +383,7 @@ footer{
 .aui-main-page{
     margin-top: 21px;
 }
-.aui-main-page .aui-group{
-    display: flex;
-}
+
 .aui-table-new .field-group{
     padding: 0 !important;
 }
