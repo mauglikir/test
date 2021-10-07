@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5, h6 {
 .block-comment{
     padding: 7px 14px;
 }
+.block-comment .aui-buttons {
+    margin-top: 7px;
+}
+.block-comment .aui-buttons button:nth-child(2){
+    margin-left: 7px;
+}
 .button-edit{
     position: absolute;
     right: 14px;
@@ -119,11 +125,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 7px;
     display: block;
 }
-.left-block .aui-table-list h3, .right-block .aui-table-list h3{
+.left-block .aui-table-list h3, .right-block .aui-table-list h3, .center-block .aui-table-list h3 {
     display: flex;
     align-items: center;
 }
-.left-block .aui-table-list h3 .aui-icon, .right-block .aui-table-list h3 .aui-icon{
+.left-block .aui-table-list h3 .aui-icon, .right-block .aui-table-list h3 .aui-icon, .center-block .aui-table-list h3 .aui-icon{
     margin-right: 7px;
 }
 .aui-item-margin{

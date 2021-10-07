@@ -400,9 +400,13 @@
                                         
                                                     
                                                     <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
-                                                
+                                                    <div class="aui-buttons">
+                                                        <button class="aui-button aui-button-primary">Добавить</button>
+                                                        <button class="aui-button">Отменит</button>
+                                                    </div>
                                             
                                     </div>
+
                                 </div>
                             </div>
                             <div class="mob-block-slider">
@@ -715,7 +719,10 @@
                                                 
                                                 <textarea  class="textarea" name="comment" id="mytextarea" placeholder="Your comment here..."></textarea>
                                             
-                                        
+                                                <div class="aui-buttons">
+                                                        <button class="aui-button aui-button-primary">Добавить</button>
+                                                        <button class="aui-button">Отменит</button>
+                                                    </div>
                                         </div>
                                         </div>
                                     </div>
